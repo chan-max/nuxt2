@@ -35,12 +35,11 @@ export default defineGameConfig({
     apiURL: 'https://api.ohioon.com',
     favicon: '/favicon.svg',
 
-
     gtmID: 'GTM-WPZQPNBH',
 
-    brandName: "Wynorix",
-    tagline: "Redefining gaming with strategy and innovation",
-    metaDescription: `Discover Wynorix, a visionary gaming platform where strategy meets creativity. Dive into thrilling adventures, master tactical gameplay, and join a vibrant global community of gamers.`,
-    metaKeywords: `Wynorix, gaming platform, online games, strategy games, adventure games, multiplayer games, innovative gaming, immersive worlds, creative gameplay, game community, play online`,
+    "brandName": "OrbRaid",
+    "tagline": "Conquer worlds, master raids, and forge alliances",
+    "metaDescription": "Embark on epic adventures with OrbRaid, the ultimate hub for gamers seeking thrilling raid challenges, strategic battles, and dynamic multiplayer experiences. Unite with allies and claim your glory!",
+    "metaKeywords": "OrbRaid, gaming platform, raid games, online battles, multiplayer gaming, epic adventures, strategic gameplay, immersive raids, game community, cooperative games, play online"
 
 })

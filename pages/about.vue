@@ -5,56 +5,55 @@
 
       <section class="mb-8">
         <p class="text-gray-700 text-lg leading-relaxed">
-          Welcome to <span class="font-semibold">Craythar</span>—a platform where
-          innovation, creativity, and strategy come together. Designed for gamers,
-          creators, and visionaries, Craythar is your gateway to a vibrant gaming
-          ecosystem where skills are honed, ambitions are realized, and passions come
-          alive.
+          Welcome to <span class="font-semibold">OrbRaid</span>—a platform designed for
+          players who thrive on strategy, collaboration, and challenge. At OrbRaid, we
+          bring gamers together to experience epic raids, conquer formidable battles, and
+          build lasting alliances.
         </p>
       </section>
 
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-          A Transformative Experience
+          A World of Epic Raids
         </h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Gaming at Craythar is more than just entertainment—it’s an immersive journey of
-          exploration, growth, and achievement. Whether you’re mastering strategies,
-          crafting groundbreaking content, or forming lifelong connections, every step
-          forward is a testament to your dedication and drive.
+          OrbRaid isn’t just about gaming—it’s about embarking on unforgettable journeys.
+          Here, you’ll tackle exhilarating challenges, push your strategic skills to the
+          limit, and emerge victorious as part of a dedicated team. This is your arena to
+          rise, lead, and achieve greatness.
         </p>
       </section>
 
       <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Community at the Core</h2>
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Community at Heart</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          <span class="font-semibold">At Craythar, community is everything.</span> We
-          bring together individuals who share a love for creativity, competition, and
-          innovation. This is a place where collaboration flourishes, camaraderie thrives,
-          and every idea and achievement contributes to our shared legacy.
+          <span class="font-semibold">At OrbRaid, community comes first.</span> We are
+          built on the foundation of teamwork and camaraderie. Whether you’re forming
+          alliances, sharing strategies, or celebrating victories, you’re part of a
+          vibrant global network of passionate gamers.
         </p>
       </section>
 
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-          Where Ambition Meets Creativity
+          Conquer, Collaborate, Create
         </h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Craythar empowers you to turn ambition into achievement. With advanced tools,
-          supportive communities, and limitless opportunities, this is your stage to
-          innovate, compete, and leave your mark. Step into Craythar and become part of a
-          movement that redefines the gaming landscape.
+          OrbRaid empowers you to take on the toughest challenges with innovation and
+          collaboration. Join forces with like-minded players, forge your path to
+          success, and leave your mark on the gaming world.
         </p>
       </section>
 
       <section>
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Have questions, feedback, or ready to begin your Craythar journey? Connect with
-          us at
-          <a href="mailto:contact@craythar.com" class="text-blue-600 hover:underline">
-            contact@craythar.com </a
-          >. We’re here to support you and celebrate your success!
+          Have questions, feedback, or ready to embark on your OrbRaid journey? Reach out
+          to us at
+          <a href="mailto:support@orbraid.com" class="text-blue-600 hover:underline">
+            support@orbraid.com
+          </a>
+          . We’re here to help and celebrate your success!
         </p>
       </section>
     </main>
