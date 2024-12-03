@@ -1,20 +1,39 @@
 <template>
-  <div class="sm:my-12 px-4 sm:px-8">
-    <!-- 游戏列表标题和总结果数 -->
-    <div
-      class="flex flex-col sm:flex-row justify-between items-center my-4 space-y-4 sm:space-y-0 max-w-7xl mx-auto p-4"
-    >
-      <h2 class="text-xl sm:text-2xl font-bold text-center sm:text-left">
-        Search results:
-      </h2>
-      <p class="text-gray-600 text-sm sm:text-base text-center sm:text-left">
-        Search Content: <span class="font-semibold">{{ searchContent || "-" }}</span> .
-        Search Type: <span class="font-semibold">{{ searchType }}</span> . Total
-        results:<span class="font-semibold">{{ total }}</span>
-      </p>
+  <div class="sm:my-12 px-4 sm:px-8 min-h-screen">
+    <!-- Game List Header -->
+    <div class="bg-white shadow-md rounded-lg p-6 mb-8 max-w-7xl mx-auto">
+      <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+        <!-- Search Results Summary -->
+        <div>
+          <h2 class="text-2xl font-bold text-gray-800">
+            Search Results Overview
+          </h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Below are the games matching your search criteria.
+          </p>
+        </div>
+
+        <!-- Statistics Display -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="bg-custom-100 text-custom-700 p-4 rounded-lg shadow-sm text-center">
+            <h3 class="text-lg font-semibold">Search Content</h3>
+            <p class="text-sm font-medium mt-1">
+              {{ searchContent || "All" }}
+            </p>
+          </div>
+          <div class="bg-custom-100 text-custom-700 p-4 rounded-lg shadow-sm text-center">
+            <h3 class="text-lg font-semibold">Search Type</h3>
+            <p class="text-sm font-medium mt-1">{{ searchType }}</p>
+          </div>
+          <div class="bg-custom-100 text-custom-700 p-4 rounded-lg shadow-sm text-center">
+            <h3 class="text-lg font-semibold">Total Results</h3>
+            <p class="text-sm font-medium mt-1">{{ total }}</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- 游戏列表展示 -->
+    <!-- Game List -->
     <div class="mb-12">
       <GameListCard
         :games="list"
@@ -24,7 +43,7 @@
       ></GameListCard>
     </div>
 
-    <!-- 空状态 -->
+    <!-- Empty State -->
     <div v-if="isEmpty" class="text-center text-gray-500 py-16">
       <p class="text-lg mb-6">No results found.</p>
       <button
@@ -35,17 +54,17 @@
       </button>
     </div>
 
-    <!-- 加载更多按钮 -->
+    <!-- Load More Button -->
     <div v-if="!isLastPage && !loading" class="text-center mt-6 mb-12">
       <button
         @click="getList"
-        class="w-full sm:w-auto px-4 py-2 bg-custom-500 text-white rounded hover:bg-custom-600 transition"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-custom-500 text-white font-semibold rounded-lg shadow-md hover:bg-custom-600 transition"
       >
         Load More
       </button>
     </div>
 
-    <!-- 加载中状态 -->
+    <!-- Loading Spinner -->
     <div v-if="loading" class="text-center mt-6 mb-12">
       <div class="inline-flex items-center space-x-2">
         <div
@@ -55,12 +74,13 @@
       </div>
     </div>
 
-    <!-- 到底了提示 -->
+    <!-- End of Results Message -->
     <div v-if="isLastPage && !loading" class="text-center mt-6 mb-12 text-gray-500">
       <p class="text-sm">You have reached the end of the results.</p>
     </div>
   </div>
 </template>
+
 
 <script lang="ts" setup>
 import API from "~/common/api";

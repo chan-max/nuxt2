@@ -3,39 +3,31 @@
     <!-- Top Section -->
     <div class="flex items-center justify-between mb-6">
       <!-- Title -->
-      <h1 class="text-2xl sm:text-4xl font-bold flex items-end space-x-4">
+      <h1
+        class="text-2xl sm:text-4xl font-bold flex items-end justify-between space-x-4 text-second-500 w-full"
+      >
         <span>{{ title }}</span>
-        <a
+
+        <button
           v-if="viewMore && games?.length > 0"
           @click="clickViewMore(title)"
-          class="text-custom-600 text-base sm:text-lg underline hover:text-custom-800 cursor-pointer transition-colors"
+          class="px-4 text-lg py-2 bg-second-500 text-white font-semibold rounded-lg flex items-center gap-2 hover:bg-second-600 transition"
         >
-          <NuxtLink to="/search"> View More → </NuxtLink>
-        </a>
+          <NuxtLink to="/search"> More → </NuxtLink>
+        </button>
       </h1>
     </div>
 
     <!-- Game Cards Grid -->
     <div
       v-if="games?.length > 0"
-      class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-4"
+      class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-5"
     >
-      <!-- First Card (Large Card) -->
       <GameCard
-        v-if="games[0]"
-        :game="games[0]"
-        class="col-span-2 xl:col-span-2 h-full transform transition-transform hover:scale-105 shadow-lg rounded-lg"
-        @playnow="$emit('playnow', games[0])"
-        @thumbClick="$emit('thumbClick', games[0])"
-        @tagClick="$emit('tagClick')"
-      />
-
-      <!-- Smaller Cards -->
-      <GameCard
-        v-for="(game, index) in games.slice(1)"
+        v-for="(game, index) in games"
         :key="game.id"
         :game="game"
-        class="transform transition-transform hover:scale-105 shadow-md rounded-lg"
+        class="transform transition-transform hover:scale-105 rounded-lg"
         @playnow="$emit('playnow', game)"
         @thumbClick="$emit('thumbClick', game)"
         @tagClick="$emit('tagClick')"

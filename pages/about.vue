@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-screen py-12 bg-gradient-to-b from-gray-50 to-gray-100">
-    <main class="container mx-auto px-6 py-10 bg-white shadow-lg rounded-xl">
+  <div class="min-h-screen py-12">
+    <main class="container mx-auto px-6 py-10 bg-white shadow-2xl rounded-xl">
       <h1 class="text-4xl font-extrabold text-gray-800 text-center mb-10">About Us</h1>
 
       <section class="mb-8">

@@ -1,41 +1,43 @@
 <template>
-  <div
-    class="bg-gradient-to-b from-syrixal-50 via-white to-syrixal-100 border border-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full"
-  >
+  <div class="bg-white rounded-lg duration-300 flex flex-col h-full">
     <!-- Game Thumbnail -->
     <div class="relative aspect-w-16 aspect-h-9">
       <NuxtLink :to="`/detail/${game.id}`" class="block h-full">
         <img
-          :src="game.thumb"
-          :alt="game.title"
-          class="w-full h-full object-cover rounded-t-xl"
+          :src="game.thumb || '/default-thumbnail.jpg'"
+          :alt="game.title || 'Game Thumbnail'"
+          class="w-full h-full object-cover rounded-lg"
         />
+        <!-- Play Overlay -->
+        <div
+          class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center rounded-t-lg"
+        >
+          <span class="text-white text-base font-medium">View Details</span>
+        </div>
       </NuxtLink>
     </div>
 
     <!-- Game Details -->
-    <div class="p-4 flex flex-col flex-grow space-y-4">
+    <div class="p-3 flex flex-col flex-grow">
       <!-- Game Title -->
       <h2
-        class="text-lg font-bold text-syrixal-700 hover:text-syrixal-500 transition cursor-pointer truncate"
+        class="text-base font-semibold text-second-500 hover:text-second-400 transition truncate"
+        title="Click to view details"
       >
-        {{ game.title }}
+        {{ game.title || "Untitled Game" }}
       </h2>
 
       <!-- Game Description -->
-      <p
-        class="text-sm text-gray-700 overflow-hidden overflow-ellipsis flex-grow"
-        style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical"
-      >
-        {{ game.description }}
+      <p class="text-xs text-gray-600 line-clamp-2 mt-1" title="Game Description">
+        {{ game.description || "No description available." }}
       </p>
 
       <!-- Tags -->
-      <div class="flex flex-wrap gap-2">
+      <div class="flex flex-wrap gap-2 mt-2">
         <template v-for="tag in formatTags(game.tags)" :key="tag">
           <span
             @click="tagClick(tag)"
-            class="bg-gradient-to-r from-syrixal-200 to-syrixal-100 text-syrixal-800 px-2 py-1 rounded-full text-xs cursor-pointer hover:from-syrixal-300 hover:to-syrixal-200 hover:text-syrixal-900 shadow-md hover:shadow-lg transition-all transform hover:scale-105"
+            class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-[10px] cursor-pointer hover:bg-second-100 hover:text-second-500 shadow transition-all"
             :title="getTagTitle(tag)"
           >
             <NuxtLink to="/search">
@@ -46,14 +48,13 @@
       </div>
 
       <!-- Play Now Button -->
-      <div class="flex justify-center">
-        <a
+      <div class="mt-auto flex justify-center">
+        <button
           @click.stop="playnow"
-          target="_blank"
-          class="bg-gradient-to-r from-syrixal-500 to-syrixal-400 text-custom-600 px-3 py-1.5 rounded-lg text-xs font-semibold shadow-md hover:from-syrixal-600 hover:to-syrixal-500 hover:scale-105 transform transition-transform duration-300 cursor-pointer"
+          class="bg-second-500 text-white px-3 py-1 my-2 rounded-md text-xs font-medium shadow-md hover:bg-second-600 hover:shadow-lg transition-transform transform hover:scale-105"
         >
           Play Now
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -63,7 +64,7 @@
 import { searchClickEventBus } from "~/common/eventBus";
 import { searchContent, searchType, SearchTypes } from "~/common/search";
 
-defineProps({
+const props = defineProps({
   game: {
     type: Object,
     required: true,
@@ -73,13 +74,13 @@ defineProps({
 const router = useRouter();
 const emits = defineEmits(["playnow"]);
 
-function playnow(game) {
-  emits("playnow", game);
+function playnow() {
+  emits("playnow", props.game);
 }
 
 // 格式化标签，最多显示8个标签
 function formatTags(tags) {
-  return tags.split(",").slice(0, 8);
+  return tags ? tags.split(",").slice(0, 8) : [];
 }
 
 function tagClick(tag) {
@@ -88,8 +89,19 @@ function tagClick(tag) {
   searchClickEventBus.emit(tag);
 }
 
-// 动态生成标签的title，假设我们希望显示 "Browse games with [tag]"
+// 动态生成标签的title
 function getTagTitle(tag) {
   return `Browse games with the "${tag}" tag.`;
 }
 </script>
+
+<style scoped>
+/* For truncating and cleaner text flow */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+</style>

@@ -1,5 +1,7 @@
 <template>
-  <header class="text-white shadow-md z-10 bg-custom-300">
+  <header
+    class="text-second-500 shadow-md z-10 bg-custom-500 border-b-8 border-second-500"
+  >
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
       <!-- 左侧：Logo 和导航菜单 -->
       <div class="flex items-center space-x-8">
@@ -19,36 +21,27 @@
           <NuxtLink
             to="/"
             class="flex flex-col items-center justify-center space-y-1 group"
+            active-class="underline decoration-2 underline-offset-4 text-second-600"
           >
-            <!-- <UIcon
-              name="i-heroicons-home"
-              class="w-6 h-6 text-white group-hover:text-custom-200 transition-transform transform group-hover:scale-110"
-            /> -->
-            <span class="text-sm text-white group-hover:text-custom-200 transition">
+            <span class="text-lg font-bold group-hover:text-second-500 transition">
               Home
             </span>
           </NuxtLink>
           <NuxtLink
             to="/games"
             class="flex flex-col items-center justify-center space-y-1 group"
+            active-class="underline decoration-2 underline-offset-4 text-second-600"
           >
-            <!-- <UIcon
-              name="i-heroicons-bars-3-16-solid"
-              class="w-6 h-6 text-white group-hover:text-custom-200 transition-transform transform group-hover:scale-110"
-            /> -->
-            <span class="text-sm text-white group-hover:text-custom-200 transition">
+            <span class="text-lg font-bold group-hover:text-second-500 transition">
               Games
             </span>
           </NuxtLink>
           <NuxtLink
             to="/about"
             class="flex flex-col items-center justify-center space-y-1 group"
+            active-class="underline decoration-2 underline-offset-4 text-second-600"
           >
-            <!-- <UIcon
-              name="i-heroicons-information-circle"
-              class="w-6 h-6 text-white group-hover:text-custom-200 transition-transform transform group-hover:scale-110"
-            /> -->
-            <span class="text-sm text-white group-hover:text-custom-200 transition">
+            <span class="text-lg font-bold group-hover:text-second-500 transition">
               About
             </span>
           </NuxtLink>
@@ -58,13 +51,13 @@
       <!-- 右侧：搜索框 -->
       <div class="hidden md:flex items-center space-x-4">
         <div
-          class="flex items-center bg-custom-500 bg-opacity-80 hover:bg-opacity-100 rounded-lg overflow-hidden border-2 border-custom-600 focus-within:border-custom-700 transition"
+          class="flex items-center bg-white rounded-full border-4 border-second-500 focus-within:border-second-600 transition"
         >
           <!-- 分类选择下拉框 -->
           <select
             v-model="searchType"
             @change="searchTypeChange"
-            class="px-4 py-2 text-sm text-white bg-transparent border-none focus:outline-none sm:w-32 md:w-40 w-20 border-r-2 border-custom-400"
+            class="px-4 py-3 text-sm bg-transparent border-none focus:outline-none text-custom-700 font-semibold border-r-2 border-second-400"
           >
             <option value="title">Title</option>
             <option value="category">Category</option>
@@ -77,15 +70,15 @@
             @keyup.enter="searchClick"
             type="text"
             placeholder="Search..."
-            class="px-4 py-2 text-sm text-white bg-transparent border-none focus:outline-none sm:w-64 md:w-72 w-48 border-r-2 border-custom-400"
+            class="px-4 py-3 text-sm bg-white border-none focus:outline-none text-custom-700 w-full"
           />
 
           <!-- 搜索按钮 -->
           <button
             @click="searchClick"
-            class="px-4 py-2 text-white bg-custom-600 hover:bg-custom-700 focus:outline-none transition"
+            class="px-6 py-3 text-sm bg-second-500 text-white rounded-full hover:bg-second-600 focus:outline-none transition font-bold"
           >
-            <NuxtLink to="/search"> Search </NuxtLink>
+            Search
           </button>
         </div>
       </div>
@@ -94,7 +87,7 @@
       <button @click="toggleMenu" class="md:hidden focus:outline-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+          class="h-6 w-6 text-second-500"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -112,40 +105,60 @@
     <!-- 移动菜单 -->
     <div v-if="isMenuOpen" class="md:hidden bg-custom-500">
       <nav class="flex flex-col space-y-2 p-4">
-        <NuxtLink to="/" class="text-white hover:text-custom-200">Home</NuxtLink>
-        <NuxtLink to="/games" class="text-white hover:text-custom-200">Games</NuxtLink>
-        <NuxtLink to="/about" class="text-white hover:text-custom-200">About</NuxtLink>
+        <NuxtLink
+          to="/"
+          class="hover:text-second-500"
+          active-class="underline decoration-2 underline-offset-4 text-second-600"
+        >
+          Home
+        </NuxtLink>
+        <NuxtLink
+          to="/games"
+          class="hover:text-second-500"
+          active-class="underline decoration-2 underline-offset-4 text-second-600"
+        >
+          Games
+        </NuxtLink>
+        <NuxtLink
+          to="/about"
+          class="hover:text-second-500"
+          active-class="underline decoration-2 underline-offset-4 text-second-600"
+        >
+          About
+        </NuxtLink>
       </nav>
 
       <!-- 移动端搜索框 -->
-      <div class="mt-4 px-4 py-4">
+      <div class="p-4 bg-white rounded-md mt-4">
         <div
-          class="bg-custom-600 rounded-lg overflow-hidden flex border-2 border-custom-700 focus-within:border-custom-800 transition"
+          class="flex items-center bg-white rounded-full border-4 border-second-500 focus-within:border-second-600 transition"
         >
-          <!-- 移动端的下拉框 -->
+          <!-- 分类选择下拉框 -->
           <select
             v-model="searchType"
-            class="px-4 py-2 text-sm text-white bg-transparent border-none focus:outline-none w-24 sm:w-32 md:w-40 border-r-2 border-custom-500"
+            @change="searchTypeChange"
+            class="px-4 py-3 text-sm bg-transparent border-none focus:outline-none text-custom-700 font-semibold border-r-2 border-second-400"
           >
             <option value="title">Title</option>
             <option value="category">Category</option>
             <option value="tags">Tags</option>
           </select>
 
-          <!-- 移动端搜索框输入 -->
+          <!-- 搜索框输入 -->
           <input
             v-model="searchContent"
+            @keyup.enter="searchClick"
             type="text"
             placeholder="Search..."
-            class="px-4 py-2 text-sm text-white bg-transparent border-none focus:outline-none w-full border-r-2 border-custom-500"
+            class="px-4 py-3 text-sm bg-white border-none focus:outline-none text-custom-700 w-full"
           />
 
-          <!-- 移动端搜索按钮 -->
+          <!-- 搜索按钮 -->
           <button
             @click="searchClick"
-            class="px-4 py-2 text-white bg-custom-700 hover:bg-custom-800 focus:outline-none transition"
+            class="px-6 py-3 text-sm bg-second-500 text-white rounded-full hover:bg-second-600 focus:outline-none transition font-bold"
           >
-            <NuxtLink to="/search"> Search</NuxtLink>
+            Search
           </button>
         </div>
       </div>
@@ -165,9 +178,12 @@ function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
 }
 
+const router = useRouter();
+
 // 处理搜索逻辑
 function searchClick() {
   searchClickEventBus.emit(searchContent.value);
+  router.push({ path: "/search" });
 }
 
 function searchTypeChange() {

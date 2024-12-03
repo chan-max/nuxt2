@@ -1,72 +1,95 @@
 <template>
-  <div class="max-w-6xl mx-auto py-8 px-6 lg:px-10 my-10 bg-white rounded-xl shadow-lg">
-    <!-- 内容布局 -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- 左侧：图片和相关内容 -->
-      <div class="md:col-span-1 flex flex-col items-start">
-        <!-- 游戏封面 -->
-        <img
-          :src="data?.thumb"
-          :alt="data?.title"
-          class="w-full h-auto rounded-lg shadow-lg mb-6"
-        />
+  <div class="min-h-screen py-4">
+    <!-- Back to Home Button -->
+    <div class="container mx-auto  mb-4">
+      <NuxtLink
+        to="/"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-custom-500 text-white font-semibold rounded-lg shadow hover:bg-custom-600 transition duration-300"
+      >
+        <UIcon name="i-heroicons-arrow-left-circle" class="w-6 h-6" />
+        Back to Home
+      </NuxtLink>
+    </div>
 
-        <!-- 游戏标签 -->
-        <div class="mb-6">
-          <h2 class="text-xl font-bold text-gray-800 mb-3">Tags</h2>
-          <div class="flex flex-wrap gap-2">
-            <span
-              v-for="tag in data?.tags?.split(', ')"
-              :key="tag"
-              class="bg-gradient-to-r from-syrixal-200 to-syrixal-100 text-syrixal-800 px-3 py-1 rounded-full text-sm font-medium shadow hover:from-syrixal-300 hover:to-syrixal-200 hover:text-syrixal-900 transition-all"
-            >
-              {{ tag }}
-            </span>
-          </div>
+    <!-- Hero Section -->
+    <section class="bg-custom-500 text-white py-16">
+      <div
+        class="container mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12 p-6"
+      >
+        <!-- Game Thumbnail -->
+        <div class="w-full lg:w-1/3">
+          <img
+            :src="data?.thumb"
+            :alt="data?.title"
+            class="rounded-xl shadow-xl w-full h-auto border-4 border-custom-400"
+          />
         </div>
 
-        <!-- 游戏分类和尺寸 -->
-        <div>
-          <h2 class="text-xl font-bold text-gray-800 mb-3">Details</h2>
-          <ul class="text-gray-700 space-y-2">
+        <!-- Game Title and Play Button -->
+        <div class="flex-1 space-y-6">
+          <h1 class="text-5xl font-extrabold">{{ data?.title }}</h1>
+          <p class="text-lg text-gray-500 leading-relaxed">
+            {{ data?.description }}
+          </p>
+          <button
+            @click="playnow"
+            class="bg-second-500 hover:bg-second-600 text-white py-3 px-8 rounded-lg font-semibold shadow-lg transition-all"
+          >
+            Play Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-12 space-y-16">
+      <!-- Game Details and Tags -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Details Section -->
+        <div class="space-y-6 bg-white rounded-lg shadow-md p-8">
+          <h2 class="text-2xl font-bold text-gray-900">Game Details</h2>
+          <ul class="space-y-3 text-gray-700">
             <li><strong>Category:</strong> {{ data?.category }}</li>
             <li><strong>Width:</strong> {{ data?.width }} px</li>
             <li><strong>Height:</strong> {{ data?.height }} px</li>
           </ul>
         </div>
-      </div>
 
-      <!-- 右侧：主要内容 -->
-      <div class="md:col-span-2 flex flex-col">
-        <!-- 游戏标题和按钮 -->
-        <div class="mb-6">
-          <h1 class="text-4xl font-extrabold text-gray-900 mb-4">{{ data?.title }}</h1>
-          <button
-            @click="playnow"
-            class="inline-block px-8 py-3 bg-gradient-to-r from-syrixal-500 to-syrixal-400 text-white font-bold rounded-lg shadow hover:from-syrixal-600 hover:to-syrixal-500 transition-all"
-          >
-            Play Now
-          </button>
+        <!-- Tags Section -->
+        <div class="lg:col-span-2 bg-white rounded-lg shadow-md p-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Tags</h2>
+          <div class="flex flex-wrap gap-3">
+            <span
+              v-for="tag in data?.tags?.split(', ')"
+              :key="tag"
+              class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full text-sm font-medium shadow hover:bg-custom-200 hover:text-custom-700 transition"
+            >
+              {{ tag }}
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Description and Instructions -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Description -->
+        <div class="bg-white rounded-lg shadow-md p-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Description</h2>
+          <p class="text-gray-700 leading-relaxed">{{ data?.description }}</p>
         </div>
 
-        <!-- 游戏描述 -->
-        <div class="mb-6">
-          <h2 class="text-2xl font-bold text-gray-800 mb-3">Description</h2>
-          <p class="text-gray-700 leading-relaxed text-lg">{{ data?.description }}</p>
-        </div>
-
-        <!-- 游戏说明 -->
-        <div class="mb-6">
-          <h2 class="text-2xl font-bold text-gray-800 mb-3">How to Play</h2>
+        <!-- How to Play -->
+        <div class="bg-white rounded-lg shadow-md p-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">How to Play</h2>
           <p class="text-gray-700 leading-relaxed">{{ data?.instructions }}</p>
         </div>
+      </section>
 
-        <!-- 联系方式或分享 -->
-        <div>
-          <h2 class="text-2xl font-bold text-gray-800 mb-3">Contact</h2>
-          <SocialShareList />
-        </div>
-      </div>
+      <!-- Contact Section -->
+      <section class="bg-custom-100 rounded-lg shadow-md p-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Stay Connected</h2>
+        <SocialShareList />
+      </section>
     </div>
   </div>
 </template>
@@ -81,11 +104,10 @@ import { useGameTitleSeo } from "~/common/seo";
 const route = useRoute();
 const id = route.params.id;
 
-// 获取游戏详情数据
+// Fetch game details
 const { data, pending } = API.getGamesById({ id: id as string });
 
 const { openGameModal } = useGameModal();
-
 const { startLoading, stopLoading } = useLoading();
 
 watchEffect(() => {

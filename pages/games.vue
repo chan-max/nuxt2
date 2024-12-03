@@ -1,16 +1,19 @@
 <template>
-  <div class="sm:my-12 px-4 sm:px-8">
-    <!-- 游戏列表标题和总结果数 -->
+  <div class="sm:my-12 px-4 sm:px-8 min-h-screen">
+    <!-- Game List Header -->
     <div
       class="flex flex-col sm:flex-row justify-between items-center my-4 space-y-4 sm:space-y-0 max-w-7xl mx-auto p-4"
     >
-      <h2 class="text-xl sm:text-2xl font-bold text-center sm:text-left">All Games:</h2>
-      <p class="text-gray-600 text-sm sm:text-base text-center sm:text-left">
-        <span class="font-semibold">total : {{ total }}</span>
-      </p>
+      <h2 class="text-xl sm:text-2xl font-bold text-center sm:text-left">All Games</h2>
+      <div class="flex items-center gap-4 text-gray-600 text-sm sm:text-base">
+        <span>Total:</span>
+        <span class="font-semibold bg-gray-100 px-3 py-1 rounded-lg shadow-sm">
+          {{ total }}
+        </span>
+      </div>
     </div>
 
-    <!-- 游戏列表展示 -->
+    <!-- Game List -->
     <div class="mb-12">
       <GameListCard
         :games="list"
@@ -20,17 +23,18 @@
       ></GameListCard>
     </div>
 
-    <!-- 加载更多按钮 -->
+    <!-- Load More Button -->
     <div v-if="!isLastPage && !loading" class="text-center mt-6 mb-12">
       <button
         @click="getList"
-        class="w-full sm:w-auto px-4 py-2 bg-custom-500 text-white rounded hover:bg-custom-600 transition"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-custom-500 text-white font-semibold rounded-lg shadow-md hover:bg-custom-600 transition"
       >
+        <UIcon name="i-heroicons-arrow-down-circle" class="w-6 h-6" />
         Load More
       </button>
     </div>
 
-    <!-- 加载中状态 -->
+    <!-- Loading Spinner -->
     <div v-if="loading" class="text-center mt-6 mb-12">
       <div class="inline-flex items-center space-x-2">
         <div
@@ -40,7 +44,7 @@
       </div>
     </div>
 
-    <!-- 到底了提示 -->
+    <!-- End of Results Message -->
     <div v-if="isLastPage && !loading" class="text-center mt-6 mb-12 text-gray-500">
       <p class="text-sm">You have reached the end of the results.</p>
     </div>

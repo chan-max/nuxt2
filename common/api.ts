@@ -124,8 +124,8 @@ function searchGames(params: SearchGamesParams) {
   * @param 无
   * @returns 
   */
-function getTags() {
-    return useApiFetch(GameApi.GetTags)
+function getTags(options?) {
+    return useApiFetch(GameApi.GetTags,options)
 }
 
 
