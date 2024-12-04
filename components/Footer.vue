@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-second-700 border-t-4 border-custom-500 text-white py-10">
+  <footer class="bg-custom-950 border-t-4 border-custom-500 text-white py-10">
     <div class="container mx-auto text-center space-y-6">
       <!-- Brand and Copyright -->
       <p class="text-sm tracking-wide">

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="text-second-500 shadow-md z-10 bg-custom-500 border-b-8 border-second-500"
+    class="text-second-500 shadow-md z-10  border-b-8 border-second-500"
   >
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
       <!-- 左侧：Logo 和导航菜单 -->

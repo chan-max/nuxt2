@@ -28,7 +28,7 @@
         <!-- Game Title and Play Button -->
         <div class="flex-1 space-y-6">
           <h1 class="text-5xl font-extrabold">{{ data?.title }}</h1>
-          <p class="text-lg text-gray-500 leading-relaxed">
+          <p class="text-lg text-custom-900 leading-relaxed">
             {{ data?.description }}
           </p>
           <button

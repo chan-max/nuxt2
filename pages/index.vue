@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap md:flex-nowrap w-full">
     <!-- 左侧分类导航栏 -->
-    <aside class="w-full md:w-1/6 py-8 px-4 bg-gray-100 md:bg-transparent">
+    <aside class="w-full md:w-1/6 py-8 px-4 md:bg-transparent">
       <!-- Navigation Buttons -->
       <div class="flex flex-wrap md:flex-col gap-4 mb-6">
         <UButton
@@ -46,7 +46,7 @@
             v-for="(category, index) in topCategories"
             :key="index"
             @click="categoryClick(category as string)"
-            class="group flex items-center px-4 py-3 bg-gradient-to-r from-gray-100 to-gray-50 border-b border-gray-200 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
+            class="group flex items-center px-4 py-3 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
             :class="{ 'bg-yellow-100': index === 0 }"
           >
             <span
@@ -77,7 +77,7 @@
             v-for="(category, index) in categoriesData"
             :key="index"
             @click="categoryClick(category as string)"
-            class="group flex items-center px-4 py-3 bg-gradient-to-r from-gray-100 to-gray-50 border-b border-gray-200 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
+            class="group flex items-center px-4 py-3  hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@
     </aside>
 
     <!-- 右侧主要内容 -->
-    <main class="w-full md:w-5/6 p-2  md:p-12 lg:p-12 xl:p-12">
+    <main class="w-full md:w-5/6 p-2 md:p-12 lg:p-12 xl:p-12">
       <!-- Random Games Section -->
       <section class="mb-12">
         <header class="flex items-center justify-between mb-4">
@@ -153,12 +153,12 @@
             Refresh Tags
           </button>
         </header>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-3">
           <span
             v-for="tag in visibleTags"
             :key="tag"
             @click="searchTag(tag)"
-            class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm cursor-pointer hover:bg-second-100 hover:text-second-500 transition"
+            class="px-4 py-2 bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 text-white text-sm font-semibold rounded-full shadow-lg cursor-pointer transition transform hover:scale-105 hover:shadow-xl hover:from-indigo-500 hover:via-purple-700 hover:to-pink-600"
           >
             {{ tag }}
           </span>
@@ -362,10 +362,7 @@ function searchTag(tag: string) {
 </script>
 
 <style scoped>
-/* 主要样式调整 */
-aside {
-  border-right: 1px solid #e5e7eb; /* light gray border for desktop view */
-}
+
 @media (max-width: 1024px) {
   aside {
     border-right: none;

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-lg duration-300 flex flex-col h-full">
+  <div class=" rounded-lg duration-300 flex flex-col h-full">
     <!-- Game Thumbnail -->
     <div class="relative aspect-w-16 aspect-h-9">
       <NuxtLink :to="`/detail/${game.id}`" class="block h-full">
@@ -37,7 +37,7 @@
         <template v-for="tag in formatTags(game.tags)" :key="tag">
           <span
             @click="tagClick(tag)"
-            class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-[10px] cursor-pointer hover:bg-second-100 hover:text-second-500 shadow transition-all"
+            class="bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 text-white px-2 py-1 rounded-full text-[10px] cursor-pointer hover:bg-second-100 hover:text-second-500 shadow transition-all"
             :title="getTagTitle(tag)"
           >
             <NuxtLink to="/search">
@@ -51,7 +51,7 @@
       <div class="mt-auto flex justify-center">
         <button
           @click.stop="playnow"
-          class="bg-second-500 text-white px-3 py-1 my-2 rounded-md text-xs font-medium shadow-md hover:bg-second-600 hover:shadow-lg transition-transform transform hover:scale-105"
+          class="bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 text-white px-3 py-1 my-2 rounded-md text-xs font-medium shadow-md hover:bg-second-600 hover:shadow-lg transition-transform transform hover:scale-105"
         >
           Play Now
         </button>
