@@ -36,7 +36,7 @@ export default defineGameConfig({
     favicon: '/favicon.svg',
 
 
-    gtmID: 'GTM-WPZQPNBH',
+    gtmID: 'GTM-NDC9GH2S',
 
     "brandName": "WarpNix",
     "tagline": "Pioneering the Future of Digital Connectivity",
