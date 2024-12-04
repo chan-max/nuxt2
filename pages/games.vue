@@ -4,8 +4,8 @@
     <div
       class="flex flex-col sm:flex-row justify-between items-center my-4 space-y-4 sm:space-y-0 max-w-7xl mx-auto p-4"
     >
-      <h2 class="text-xl sm:text-2xl font-bold text-center sm:text-left">All Games</h2>
-      <div class="flex items-center gap-4 text-gray-600 text-sm sm:text-base">
+      <h2 class="text-xl sm:text-2xl font-bold text-center sm:text-left text-second-600">All Games</h2>
+      <div class="flex items-center gap-4 text-second-600 text-sm sm:text-base">
         <span>Total:</span>
         <span class="font-semibold bg-gray-100 px-3 py-1 rounded-lg shadow-sm">
           {{ total }}

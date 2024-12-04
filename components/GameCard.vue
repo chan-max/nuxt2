@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-lg duration-300 flex flex-col h-full">
+  <div class="bg-custom-950 rounded-lg duration-300 flex flex-col h-full">
     <!-- Game Thumbnail -->
     <div class="relative aspect-w-16 aspect-h-9">
       <NuxtLink :to="`/detail/${game.id}`" class="block h-full">
@@ -28,7 +28,7 @@
       </h2>
 
       <!-- Game Description -->
-      <p class="text-xs text-gray-600 line-clamp-2 mt-1" title="Game Description">
+      <p class="text-xs text-white line-clamp-2 mt-1" title="Game Description">
         {{ game.description || "No description available." }}
       </p>
 
