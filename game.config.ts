@@ -36,7 +36,7 @@ export default defineGameConfig({
     favicon: '/favicon.svg',
 
 
-    gtmID: 'GTM-WPZQPNBH',
+    gtmID: 'GTM-T4SLNZ63',
 
     "brandName": "Thundrix",
     "tagline": "Unleashing the power of immersive gaming",
