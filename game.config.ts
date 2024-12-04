@@ -35,7 +35,7 @@ export default defineGameConfig({
     apiURL: 'https://api.ohioon.com',
     favicon: '/favicon.svg',
 
-    gtmID: 'GTM-WPZQPNBH',
+    gtmID: 'GTM-WWKSM62Z',
 
     "brandName": "TitanRun",
     "tagline": "Unleash your potential, conquer worlds, and dominate challenges",
