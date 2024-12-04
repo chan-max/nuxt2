@@ -4,30 +4,30 @@ import { defineGameConfig } from "./common/config"
 export default defineGameConfig({
     tailwindColors: {
         'custom': {
-            '50': '#efeeff',
-            '100': '#e1e0ff',
-            '200': '#c9c7fe',
-            '300': '#a8a5fc',
-            '400': '#8581f8',
-            '500': '#6863f1',
-            '600': '#4c46e5',
-            '700': '#3d38ca',
-            '800': '#3430a3',
-            '900': '#312e81',
-            '950': '#1d1b4b',
+            '50': '#fff7ec',
+            '100': '#ffedd3',
+            '200': '#ffd8a5',
+            '300': '#ffbb6d',
+            '400': '#ff9232',
+            '500': '#ff730a',
+            '600': '#ff5900',
+            '700': '#cc3e02',
+            '800': '#a1310b',
+            '900': '#822b0c',
+            '950': '#461204',
         },
         'second': {
-            '50': '#efeeff',
-            '100': '#e1e0ff',
-            '200': '#c9c7fe',
-            '300': '#a8a5fc',
-            '400': '#8581f8',
-            '500': '#6863f1',
-            '600': '#4c46e5',
-            '700': '#3d38ca',
-            '800': '#3430a3',
-            '900': '#312e81',
-            '950': '#1d1b4b',
+            '50': '#fff7ec',
+            '100': '#ffedd3',
+            '200': '#ffd8a5',
+            '300': '#ffbb6d',
+            '400': '#ff9232',
+            '500': '#ff730a',
+            '600': '#ff5900',
+            '700': '#cc3e02',
+            '800': '#a1310b',
+            '900': '#822b0c',
+            '950': '#461204',
         }
     },
 
@@ -38,9 +38,9 @@ export default defineGameConfig({
 
     gtmID: 'GTM-WPZQPNBH',
 
-    "brandName": "NovaClash",
-    "tagline": "Unleashing battles with strategy and creativity",
-    "metaDescription": "Discover NovaClash, a groundbreaking gaming platform where strategic brilliance meets boundless creativity. Embark on epic adventures, conquer tactical challenges, and connect with a thriving global community of gamers.",
-    "metaKeywords": "NovaClash, gaming platform, online games, strategy games, adventure games, multiplayer games, innovative gaming, immersive worlds, creative gameplay, game community, play online"
+    "brandName": "Thundrix",
+    "tagline": "Unleashing the power of immersive gaming",
+    "metaDescription": "Welcome to Thundrix, where innovation meets the ultimate gaming experience. Embark on thrilling adventures, master strategic gameplay, and join a global community of passionate players.",
+    "metaKeywords": "Thundrix, gaming platform, immersive games, strategy games, multiplayer adventures, innovative gaming, virtual worlds, global gaming community, play online, cutting-edge gaming"
   
 })

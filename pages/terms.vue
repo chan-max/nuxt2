@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen py-12">
+  <div class="min-h-screen py-12 ">
     <main class="container mx-auto px-6 py-10 bg-white shadow-2xl rounded-xl">
       <!-- Page Header -->
       <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">
@@ -9,9 +9,9 @@
       <!-- Welcome Section -->
       <section class="mb-10">
         <p class="text-gray-800 text-lg leading-relaxed text-center max-w-4xl mx-auto">
-          Welcome to <span class="font-semibold text-custom-500">NovaClash</span>! These
-          terms and conditions outline the rules and regulations for using NovaClash's
-          website. By accessing NovaClash, you agree to these terms. If you do not agree,
+          Welcome to <span class="font-semibold text-blue-600">Thundrix</span>! These
+          terms and conditions outline the rules and regulations for using Thundrix's
+          website. By accessing Thundrix, you agree to these terms. If you do not agree,
           we kindly ask you to discontinue using this website.
         </p>
       </section>
@@ -25,9 +25,9 @@
         </p>
         <ul class="list-disc list-inside text-gray-800 mt-4 space-y-2">
           <li>"Client," "You," and "Your" refer to you, the user of this website.</li>
-          <li>"The Company," "We," "Our," and "Us" refer to NovaClash.</li>
+          <li>"The Company," "We," "Our," and "Us" refer to Thundrix.</li>
           <li>
-            "Party," "Parties," or "Us" refers to both the Client and NovaClash
+            "Party," "Parties," or "Us" refers to both the Client and Thundrix
             collectively.
           </li>
         </ul>
@@ -37,9 +37,9 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Cookies</h2>
         <p class="text-gray-800 text-lg leading-relaxed">
-          NovaClash uses cookies to enhance your experience. By continuing to use our
+          Thundrix uses cookies to enhance your experience. By continuing to use our
           website, you consent to the use of cookies as outlined in our
-          <a href="/privacy-policy" class="text-custom-500 hover:underline"
+          <a href="/privacy-policy" class="text-blue-600 hover:underline"
             >Privacy Policy</a
           >.
         </p>
@@ -49,15 +49,15 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">License</h2>
         <p class="text-gray-800 text-lg leading-relaxed">
-          Unless otherwise stated, NovaClash and its licensors own the intellectual
+          Unless otherwise stated, Thundrix and its licensors own the intellectual
           property rights for all material on this website. All rights are reserved. The
           following actions are strictly prohibited without prior permission:
         </p>
         <ul class="list-disc list-inside text-gray-800 mt-4 space-y-2">
-          <li>Republishing material from NovaClash.</li>
-          <li>Selling, renting, or sub-licensing material from NovaClash.</li>
-          <li>Reproducing, duplicating, or copying material from NovaClash.</li>
-          <li>Redistributing content from NovaClash.</li>
+          <li>Republishing material from Thundrix.</li>
+          <li>Selling, renting, or sub-licensing material from Thundrix.</li>
+          <li>Reproducing, duplicating, or copying material from Thundrix.</li>
+          <li>Redistributing content from Thundrix.</li>
         </ul>
       </section>
 
@@ -67,7 +67,7 @@
         <p class="text-gray-800 text-lg leading-relaxed">
           Certain organizations may link to our website without prior approval, such as
           government agencies, search engines, and news organizations. However, these
-          links must not falsely imply sponsorship or endorsement by NovaClash.
+          links must not falsely imply sponsorship or endorsement by Thundrix.
         </p>
       </section>
 
@@ -75,8 +75,8 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Content Liability</h2>
         <p class="text-gray-800 text-lg leading-relaxed">
-          NovaClash is not responsible for content appearing on your website. You agree to
-          indemnify us against any claims arising from such content. Links to NovaClash
+          Thundrix is not responsible for content appearing on your website. You agree to
+          indemnify us against any claims arising from such content. Links to Thundrix
           must not promote unlawful activities or violate the rights of others.
         </p>
       </section>
@@ -85,7 +85,7 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Disclaimer</h2>
         <p class="text-gray-800 text-lg leading-relaxed">
-          To the fullest extent permitted by law, NovaClash excludes all warranties and
+          To the fullest extent permitted by law, Thundrix excludes all warranties and
           disclaims liability for any loss or damage arising from the use of this website.
         </p>
       </section>
@@ -95,7 +95,7 @@
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Contact</h2>
         <p class="text-gray-800 text-lg leading-relaxed">
           If you have any questions regarding these terms, feel free to
-          <a href="/contact" class="text-custom-500 hover:underline">contact us</a>.
+          <a href="/contact" class="text-blue-600 hover:underline">contact us</a>.
         </p>
       </section>
     </main>
@@ -109,5 +109,8 @@ useGameTermsSeo();
 </script>
 
 <style scoped>
-/* Optional: Customize additional styles for branding */
+/* Optional: Customize additional styles for Thundrix branding */
+.text-blue-600 {
+  color: #4a90e2; /* Thundrix primary color */
+}
 </style>

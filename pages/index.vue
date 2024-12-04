@@ -36,7 +36,7 @@
       <!-- Top Categories -->
       <div class="mb-6">
         <h2
-          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3 rounded-t-2xl rounded-b-lg"
+          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3 "
         >
           <UIcon name="i-basil-award-solid" class="w-6 h-6 text-yellow-500 mr-2" />
           <span class="flex-grow">TOP {{ topCategories?.length }}</span>
@@ -67,7 +67,7 @@
       <!-- Group Categories -->
       <div>
         <h2
-          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3 rounded-t-2xl rounded-b-lg"
+          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3 "
         >
           <UIcon name="i-heroicons-archive-box-solid" class="w-6 h-6 mr-2" />
           <span class="flex-grow">{{ categoriesData?.length }} GROUPS</span>
@@ -77,7 +77,7 @@
             v-for="(category, index) in categoriesData"
             :key="index"
             @click="categoryClick(category as string)"
-            class="group flex items-center px-4 py-3  hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
+            class="group flex items-center px-4 py-3 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@
             v-for="tag in visibleTags"
             :key="tag"
             @click="searchTag(tag)"
-            class="px-4 py-2 bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 text-white text-sm font-semibold rounded-full shadow-lg cursor-pointer transition transform hover:scale-105 hover:shadow-xl hover:from-indigo-500 hover:via-purple-700 hover:to-pink-600"
+            class="px-4 py-2 bg-gradient-to-r from-custom-300 via-custom-400 to-custom-500 text-white text-sm font-semibold shadow-lg cursor-pointer transition transform hover:scale-105 hover:shadow-xl hover:from-indigo-500 hover:via-purple-700 hover:to-pink-600"
           >
             {{ tag }}
           </span>
@@ -362,7 +362,6 @@ function searchTag(tag: string) {
 </script>
 
 <style scoped>
-
 @media (max-width: 1024px) {
   aside {
     border-right: none;
