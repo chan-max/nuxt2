@@ -9,7 +9,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "generate:prod": "BASE_URL=https://spectrixquest.com NODE_ENV=production nuxt generate"
+    "generate:prod": "BASE_URL=https://titanrungame.com NODE_ENV=production nuxt generate"
   },
   "dependencies": {
     "@nuxt/image": "^1.6.0",

@@ -1,46 +1,40 @@
 <template>
   <div
-    class="bg-gradient-to-r from-second-500 to-second-400 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full transform hover:scale-105"
+    class="relative rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105 flex flex-col h-full"
   >
-    <!-- Game Thumbnail -->
-    <div class="relative aspect-w-16 aspect-h-9 group">
-      <NuxtLink :to="`/detail/${game.id}`" class="block h-full">
-        <img
-          :src="game.thumb || '/default-thumbnail.jpg'"
-          :alt="game.title || 'Game Thumbnail'"
-          class="w-full h-full object-cover rounded-t-lg transition-transform transform group-hover:scale-110"
-        />
-        <!-- Play Overlay -->
-        <div
-          class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-t-lg"
-        >
-          <span class="text-white text-base font-bold tracking-wide"> Explore Game </span>
-        </div>
-      </NuxtLink>
-    </div>
+    <!-- Background Image -->
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      :style="{ backgroundImage: `url(${game.thumb || '/default-thumbnail.jpg'})` }"
+    ></div>
 
-    <!-- Game Details -->
-    <div class="p-6 flex flex-col flex-grow text-custom-500">
+    <!-- Overlay -->
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/90 opacity-100"
+    ></div>
+
+    <!-- Content -->
+    <div class="relative z-10 p-6 flex flex-col flex-grow text-white">
       <!-- Game Title -->
       <NuxtLink
         :to="`/detail/${game.id}`"
-        class="text-xl font-extrabold truncate hover:underline"
+        class="text-2xl font-extrabold truncate hover:underline mb-3"
         title="Click to view details"
       >
         {{ game.title || "Untitled Game" }}
       </NuxtLink>
 
       <!-- Game Description -->
-      <p class="text-sm opacity-90 mt-2 line-clamp-3" title="Game Description">
+      <p class="text-sm opacity-90 line-clamp-3 mb-4" title="Game Description">
         {{ game.description || "No description available." }}
       </p>
 
       <!-- Tags -->
-      <div class="flex flex-wrap gap-3 mt-4">
+      <div class="flex flex-wrap gap-2 mb-6">
         <template v-for="tag in formatTags(game.tags)" :key="tag">
           <span
             @click="tagClick(tag)"
-            class="bg-white/10 text-custom-500 px-3 py-1 rounded-full text-xs cursor-pointer hover:bg-white/20 shadow-md transition-all"
+            class="bg-white/20 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-white/40 shadow-md transition-all"
             :title="getTagTitle(tag)"
           >
             {{ tag }}
@@ -52,7 +46,7 @@
       <div class="mt-auto flex justify-center">
         <button
           @click.stop="playnow"
-          class="bg-white text-second-500 px-4 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-100 hover:text-second-600 transition-transform transform hover:scale-110"
+          class="bg-custom-500 text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:bg-custom-400 transition-transform transform hover:scale-110"
         >
           Play Now
         </button>
@@ -96,6 +90,12 @@ function getTagTitle(tag) {
 </script>
 
 <style scoped>
+/* Background image always covers card */
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
 /* For truncating and cleaner text flow */
 .line-clamp-3 {
   display: -webkit-box;
@@ -105,21 +105,10 @@ function getTagTitle(tag) {
   text-overflow: ellipsis;
 }
 
-/* Aspect ratio utility */
-.aspect-w-16 {
-  width: 100%;
+/* Hover interaction for play button */
+button {
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.aspect-h-9 {
-  padding-top: 56.25%; /* 16:9 aspect ratio */
-  position: relative;
-}
-
-.aspect-w-16.aspect-h-9 > * {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+/* Custom gradient and shadow styles */
 </style>

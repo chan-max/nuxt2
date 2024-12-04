@@ -1,6 +1,6 @@
 <template>
   <header
-    class="text-white shadow-md z-10 bg-custom-000 border-b-2 border-second-500"
+    class="text-custom-900 shadow-md z-10 bg-custom-000 border-b-2 border-second-500"
     style="background-image:url(/bg.svg)"
   >
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
@@ -22,7 +22,7 @@
           <NuxtLink
             to="/"
             class="flex flex-col items-center justify-center space-y-1 group"
-            active-class="underline decoration-2 underline-offset-4 text-white"
+            active-class="underline decoration-2 underline-offset-4 text-custom-900"
           >
             <span class="text-lg font-bold group-hover:text-second-900 transition">
               Home
@@ -31,7 +31,7 @@
           <NuxtLink
             to="/games"
             class="flex flex-col items-center justify-center space-y-1 group"
-            active-class="underline decoration-2 underline-offset-4 text-white"
+            active-class="underline decoration-2 underline-offset-4 text-custom-900"
           >
             <span class="text-lg font-bold group-hover:text-second-900 transition">
               Games
@@ -40,7 +40,7 @@
           <NuxtLink
             to="/about"
             class="flex flex-col items-center justify-center space-y-1 group"
-            active-class="underline decoration-2 underline-offset-4 text-white"
+            active-class="underline decoration-2 underline-offset-4 text-custom-900"
           >
             <span class="text-lg font-bold group-hover:text-second-900 transition">
               About
@@ -77,7 +77,7 @@
           <!-- 搜索按钮 -->
           <button
             @click="searchClick"
-            class="px-6 py-3 text-sm bg-second-500 text-white rounded-full hover:bg-second-600 focus:outline-none transition font-bold"
+            class="px-6 py-3 text-sm bg-second-500 text-custom-900 rounded-full hover:bg-second-600 focus:outline-none transition font-bold"
           >
             Search
           </button>
@@ -157,7 +157,7 @@
           <!-- 搜索按钮 -->
           <button
             @click="searchClick"
-            class="px-6 py-3 text-sm bg-second-500 text-white rounded-full hover:bg-second-600 focus:outline-none transition font-bold"
+            class="px-6 py-3 text-sm bg-second-500 text-custom-900 rounded-full hover:bg-second-600 focus:outline-none transition font-bold"
           >
             Search
           </button>
