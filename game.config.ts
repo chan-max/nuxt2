@@ -35,7 +35,7 @@ export default defineGameConfig({
     apiURL: 'https://api.ohioon.com',
     favicon: '/favicon.svg',
 
-    gtmID: 'GTM-WPZQPNBH',
+    gtmID: 'GTM-PQL62CM8',
 
     "brandName": "OrbRaid",
     "tagline": "Conquer worlds, master raids, and forge alliances",
