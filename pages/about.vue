@@ -5,53 +5,52 @@
 
       <section class="mb-8">
         <p class="text-gray-700 text-lg leading-relaxed">
-          Welcome to <span class="font-semibold">OrbRaid</span>—a platform designed for
-          players who thrive on strategy, collaboration, and challenge. At OrbRaid, we
-          bring gamers together to experience epic raids, conquer formidable battles, and
-          build lasting alliances.
+          Welcome to <span class="font-semibold">InferGrid</span>—a platform designed for
+          players who thrive on strategy, innovation, and tactical challenges. At InferGrid, 
+          we unite gamers to explore dynamic grids, master strategic gameplay, and build 
+          lasting connections.
         </p>
       </section>
 
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-          A World of Epic Raids
+          A World of Strategic Grids
         </h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          OrbRaid isn’t just about gaming—it’s about embarking on unforgettable journeys.
-          Here, you’ll tackle exhilarating challenges, push your strategic skills to the
-          limit, and emerge victorious as part of a dedicated team. This is your arena to
-          rise, lead, and achieve greatness.
+          InferGrid isn’t just about gaming—it’s about mastering innovative gameplay 
+          and redefining tactics. Here, you’ll navigate intricate challenges, refine your 
+          strategies, and collaborate with others to dominate the grid.
         </p>
       </section>
 
       <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Community at Heart</h2>
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Community at the Core</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          <span class="font-semibold">At OrbRaid, community comes first.</span> We are
-          built on the foundation of teamwork and camaraderie. Whether you’re forming
-          alliances, sharing strategies, or celebrating victories, you’re part of a
-          vibrant global network of passionate gamers.
+          <span class="font-semibold">At InferGrid, community is everything.</span> We are
+          built on the principles of collaboration and shared success. Whether you’re 
+          forming alliances, exchanging strategies, or celebrating victories, you’re part 
+          of a global network of passionate gamers.
         </p>
       </section>
 
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-          Conquer, Collaborate, Create
+          Innovate, Collaborate, Dominate
         </h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          OrbRaid empowers you to take on the toughest challenges with innovation and
-          collaboration. Join forces with like-minded players, forge your path to
-          success, and leave your mark on the gaming world.
+          InferGrid empowers you to tackle the toughest challenges with ingenuity and 
+          teamwork. Join forces with like-minded players, shape your strategies, and leave 
+          your mark in a world of evolving grids and endless possibilities.
         </p>
       </section>
 
       <section>
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Have questions, feedback, or ready to embark on your OrbRaid journey? Reach out
+          Have questions, feedback, or ready to embark on your InferGrid journey? Reach out
           to us at
-          <a href="mailto:support@orbraid.com" class="text-blue-600 hover:underline">
-            support@orbraid.com
+          <a href="mailto:support@infergrid.com" class="text-blue-600 hover:underline">
+            support@infergrid.com
           </a>
           . We’re here to help and celebrate your success!
         </p>
@@ -67,5 +66,5 @@ useGameAboutSeo();
 </script>
 
 <style scoped>
-/* Optional: Add any additional custom styles if needed */
+/* Optional: Add additional custom styles if needed */
 </style>

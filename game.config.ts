@@ -4,30 +4,30 @@ import { defineGameConfig } from "./common/config"
 export default defineGameConfig({
     tailwindColors: {
         'custom': {
-            '50': '#fff9e6',  // 非常浅的黄色
-            '100': '#fff3cc',  // 浅黄色
-            '200': '#ffe799',  // 较浅黄色
-            '300': '#ffdb66',  // 浅亮黄色
-            '400': '#ffd033',  // 明亮黄色
-            '500': '#ffcb31',  // 主色，黄色
-            '600': '#e6b52b',  // 微暗黄色
-            '700': '#b38a21',  // 暗黄色
-            '800': '#805f18',  // 深黄色
-            '900': '#4d360f',  // 很深的黄色
-            '950': '#2f2009',  // 接近棕色
+            '50': '#f7f7f7',
+            '100': '#ededed',
+            '200': '#dfdfdf',
+            '300': '#cccccc',
+            '400': '#adadad',
+            '500': '#999999',
+            '600': '#888888',
+            '700': '#7b7b7b',
+            '800': '#676767',
+            '900': '#545454',
+            '950': '#363636',
         },
         'second': {
-            '50': '#fdebf2',  // 非常浅的粉红色
-            '100': '#f9cde0',  // 浅粉红色
-            '200': '#f39bbf',  // 较浅的粉红色
-            '300': '#ec699f',  // 亮粉红色
-            '400': '#e5397f',  // 明亮玫红色
-            '500': '#D91965',  // 主色，玫红色
-            '600': '#c1155b',  // 微暗玫红色
-            '700': '#9b1048',  // 深玫红色
-            '800': '#750b36',  // 更深的玫红色
-            '900': '#500724',  // 接近紫色的深玫红色
-            '950': '#330416',  // 极深的玫红色
+                '50': '#f6ffe5',
+                '100': '#e9ffc7',
+                '200': '#d2ff95',
+                '300': '#b8ff65',
+                '400': '#93f625',
+                '500': '#73dd05',
+                '600': '#56b100',
+                '700': '#428605',
+                '800': '#37690b',
+                '900': '#2f590e',
+                '950': '#153201',
         }
     },
 
@@ -37,9 +37,9 @@ export default defineGameConfig({
 
     gtmID: 'GTM-WPZQPNBH',
 
-    "brandName": "OrbRaid",
-    "tagline": "Conquer worlds, master raids, and forge alliances",
-    "metaDescription": "Embark on epic adventures with OrbRaid, the ultimate hub for gamers seeking thrilling raid challenges, strategic battles, and dynamic multiplayer experiences. Unite with allies and claim your glory!",
-    "metaKeywords": "OrbRaid, gaming platform, raid games, online battles, multiplayer gaming, epic adventures, strategic gameplay, immersive raids, game community, cooperative games, play online"
+    "brandName": "InferGrid",
+    "tagline": "Master the grid, dominate challenges, and unite through strategy",
+    "metaDescription": "Discover InferGrid, the ultimate platform for gamers seeking innovative challenges, tactical grid-based gameplay, and a thriving multiplayer community. Shape your strategy, connect with allies, and redefine victory!",
+    "metaKeywords": "InferGrid, gaming platform, grid-based games, online strategy, multiplayer gaming, tactical gameplay, immersive challenges, game community, cooperative games, play online"
 
 })

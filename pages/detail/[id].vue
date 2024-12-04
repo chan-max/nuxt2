@@ -4,7 +4,7 @@
     <div class="container mx-auto  mb-4">
       <NuxtLink
         to="/"
-        class="inline-flex items-center gap-2 px-6 py-3 bg-custom-500 text-white font-semibold rounded-lg shadow hover:bg-custom-600 transition duration-300"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-second-500 text-white font-semibold rounded-lg shadow hover:bg-custom-600 transition duration-300"
       >
         <UIcon name="i-heroicons-arrow-left-circle" class="w-6 h-6" />
         Back to Home
@@ -62,7 +62,7 @@
             <span
               v-for="tag in data?.tags?.split(', ')"
               :key="tag"
-              class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full text-sm font-medium shadow hover:bg-custom-200 hover:text-custom-700 transition"
+              class="bg-second-200 text-gray-800 px-4 py-2 rounded-full text-sm font-medium shadow hover:bg-custom-200 hover:text-custom-700 transition"
             >
               {{ tag }}
             </span>

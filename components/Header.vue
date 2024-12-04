@@ -1,6 +1,6 @@
 <template>
   <header
-    class="text-second-500 shadow-md z-10 bg-custom-500 border-b-8 border-second-500"
+    class="text-second-500 shadow-md z-10 bg-custom-000 border-b-2 border-second-500"
   >
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
       <!-- 左侧：Logo 和导航菜单 -->
@@ -11,7 +11,7 @@
             <img
               src="/logo.svg"
               alt="Logo"
-              class="h-8 w-auto pr-2 max-w-[120px] md:max-w-none hover:scale-105"
+              class="h-10 w-auto pr-2 max-w-[120px] md:max-w-none hover:scale-105"
             />
           </NuxtLink>
         </div>
