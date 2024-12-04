@@ -9,8 +9,8 @@
       <!-- Welcome Section -->
       <section class="mb-10">
         <p class="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
-          Welcome to <span class="font-semibold">OrbRaid</span>! These terms and
-          conditions outline the rules and regulations for using OrbRaid's website. If you
+          Welcome to <span class="font-semibold">Cryonix</span>! These terms and
+          conditions outline the rules and regulations for using Cryonix's website. If you
           do not agree to these terms, we kindly ask you to discontinue using this
           website.
         </p>
@@ -25,9 +25,9 @@
         </p>
         <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
           <li>"Client," "You," and "Your" refer to you, the user of this website.</li>
-          <li>"The Company," "We," "Our," and "Us" refer to OrbRaid.</li>
+          <li>"The Company," "We," "Our," and "Us" refer to Cryonix.</li>
           <li>
-            "Party," "Parties," or "Us" refers to both the Client and OrbRaid
+            "Party," "Parties," or "Us" refers to both the Client and Cryonix
             collectively.
           </li>
         </ul>
@@ -37,7 +37,7 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">Cookies</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          We use cookies to enhance your experience on OrbRaid. By using our website, you
+          We use cookies to enhance your experience on Cryonix. By using our website, you
           consent to the use of cookies in accordance with our
           <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>.
         </p>
@@ -47,15 +47,15 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">License</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Unless otherwise stated, OrbRaid and its licensors own the intellectual property
+          Unless otherwise stated, Cryonix and its licensors own the intellectual property
           rights for all material on this website. All rights are reserved. The following
           actions are not permitted:
         </p>
         <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
-          <li>Republishing material from OrbRaid without explicit permission.</li>
-          <li>Selling, renting, or sub-licensing material from OrbRaid.</li>
-          <li>Reproducing, duplicating, or copying material from OrbRaid.</li>
-          <li>Redistributing content from OrbRaid without explicit permission.</li>
+          <li>Republishing material from Cryonix without explicit permission.</li>
+          <li>Selling, renting, or sub-licensing material from Cryonix.</li>
+          <li>Reproducing, duplicating, or copying material from Cryonix.</li>
+          <li>Redistributing content from Cryonix without explicit permission.</li>
         </ul>
       </section>
 
@@ -65,7 +65,7 @@
         <p class="text-gray-700 text-lg leading-relaxed">
           Certain organizations may link to our website without prior approval, including
           government agencies, search engines, and news organizations. However, such links
-          must not falsely imply sponsorship or endorsement by OrbRaid.
+          must not falsely imply sponsorship or endorsement by Cryonix.
         </p>
       </section>
 
@@ -73,9 +73,9 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">Content Liability</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          OrbRaid is not responsible for content appearing on your website. You agree to
+          Cryonix is not responsible for content appearing on your website. You agree to
           protect and defend us against any claims arising from content on your website.
-          Links to OrbRaid must not promote unlawful activities or infringe on the rights
+          Links to Cryonix must not promote unlawful activities or infringe on the rights
           of others.
         </p>
       </section>
@@ -84,7 +84,7 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">Disclaimer</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          To the fullest extent permitted by law, OrbRaid excludes all warranties and is
+          To the fullest extent permitted by law, Cryonix excludes all warranties and is
           not responsible for any loss or damage resulting from the use of this website.
         </p>
       </section>

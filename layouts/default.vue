@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-custom-950">
     <NuxtLoadingIndicator :color="loadingColor" />
     <!-- <BackToTop /> -->
     <Header />

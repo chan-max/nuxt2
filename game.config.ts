@@ -4,30 +4,30 @@ import { defineGameConfig } from "./common/config"
 export default defineGameConfig({
     tailwindColors: {
         'custom': {
-            '50': '#fff9e6',  // 非常浅的黄色
-            '100': '#fff3cc',  // 浅黄色
-            '200': '#ffe799',  // 较浅黄色
-            '300': '#ffdb66',  // 浅亮黄色
-            '400': '#ffd033',  // 明亮黄色
-            '500': '#ffcb31',  // 主色，黄色
-            '600': '#e6b52b',  // 微暗黄色
-            '700': '#b38a21',  // 暗黄色
-            '800': '#805f18',  // 深黄色
-            '900': '#4d360f',  // 很深的黄色
-            '950': '#2f2009',  // 接近棕色
+            '50': '#eef6ff',
+            '100': '#e0eeff',
+            '200': '#c8ddfd',
+            '300': '#a6c7fb',
+            '400': '#83a5f6',
+            '500': '#6585ef',
+            '600': '#4860e3',
+            '700': '#3a4dc8',
+            '800': '#3243a1',
+            '900': '#2f3d80',
+            '950': '#10142b',
         },
         'second': {
-            '50': '#fdebf2',  // 非常浅的粉红色
-            '100': '#f9cde0',  // 浅粉红色
-            '200': '#f39bbf',  // 较浅的粉红色
-            '300': '#ec699f',  // 亮粉红色
-            '400': '#e5397f',  // 明亮玫红色
-            '500': '#D91965',  // 主色，玫红色
-            '600': '#c1155b',  // 微暗玫红色
-            '700': '#9b1048',  // 深玫红色
-            '800': '#750b36',  // 更深的玫红色
-            '900': '#500724',  // 接近紫色的深玫红色
-            '950': '#330416',  // 极深的玫红色
+            '50': '#f3f0ff',
+            '100': '#ebe4ff',
+            '200': '#d8cdff',
+            '300': '#bda6ff',
+            '400': '#9e73ff',
+            '500': '#823bff',
+            '600': '#7714ff',
+            '700': '#6900ff',
+            '800': '#5901d6',
+            '900': '#4a03af',
+            '950': '#2c0077',
         }
     },
 
@@ -37,9 +37,9 @@ export default defineGameConfig({
 
     gtmID: 'GTM-WPZQPNBH',
 
-    "brandName": "OrbRaid",
-    "tagline": "Conquer worlds, master raids, and forge alliances",
-    "metaDescription": "Embark on epic adventures with OrbRaid, the ultimate hub for gamers seeking thrilling raid challenges, strategic battles, and dynamic multiplayer experiences. Unite with allies and claim your glory!",
-    "metaKeywords": "OrbRaid, gaming platform, raid games, online battles, multiplayer gaming, epic adventures, strategic gameplay, immersive raids, game community, cooperative games, play online"
-
+    "brandName": "Cryonix",
+    "tagline": "Explore, strategize, and dominate the gaming frontier",
+    "metaDescription": "Discover Cryonix, the ultimate destination for gamers seeking immersive adventures, strategic gameplay, and a thriving multiplayer community. Forge alliances, conquer challenges, and define your legacy!",
+    "metaKeywords": "Cryonix, gaming platform, immersive games, strategy games, online battles, multiplayer gaming, epic adventures, cooperative games, gaming community, play online"
+  
 })

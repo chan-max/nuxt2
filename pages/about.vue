@@ -5,53 +5,53 @@
 
       <section class="mb-8">
         <p class="text-gray-700 text-lg leading-relaxed">
-          Welcome to <span class="font-semibold">OrbRaid</span>—a platform designed for
-          players who thrive on strategy, collaboration, and challenge. At OrbRaid, we
-          bring gamers together to experience epic raids, conquer formidable battles, and
-          build lasting alliances.
+          Welcome to <span class="font-semibold">Cryonix</span>—a platform designed for
+          gamers who seek immersive adventures, masterful strategies, and meaningful
+          connections. At Cryonix, we blend creativity, competition, and collaboration to
+          create unforgettable gaming experiences.
+        </p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">A Realm of Innovation</h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Cryonix isn’t just about gaming—it’s a journey into uncharted territories of
+          strategy and creativity. Here, you’ll explore groundbreaking challenges, refine
+          your skills, and lead your team to unparalleled achievements. This is your stage
+          to innovate, conquer, and excel.
+        </p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Community at the Core</h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          <span class="font-semibold"
+            >At Cryonix, community is the foundation of success.</span
+          >
+          Whether you’re forging alliances, crafting new strategies, or celebrating
+          victories, you’re part of a thriving network of passionate gamers who inspire
+          and uplift one another.
         </p>
       </section>
 
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-          A World of Epic Raids
+          Elevate Your Gaming Experience
         </h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          OrbRaid isn’t just about gaming—it’s about embarking on unforgettable journeys.
-          Here, you’ll tackle exhilarating challenges, push your strategic skills to the
-          limit, and emerge victorious as part of a dedicated team. This is your arena to
-          rise, lead, and achieve greatness.
-        </p>
-      </section>
-
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Community at Heart</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          <span class="font-semibold">At OrbRaid, community comes first.</span> We are
-          built on the foundation of teamwork and camaraderie. Whether you’re forming
-          alliances, sharing strategies, or celebrating victories, you’re part of a
-          vibrant global network of passionate gamers.
-        </p>
-      </section>
-
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-          Conquer, Collaborate, Create
-        </h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          OrbRaid empowers you to take on the toughest challenges with innovation and
-          collaboration. Join forces with like-minded players, forge your path to
-          success, and leave your mark on the gaming world.
+          Cryonix empowers players to push boundaries and redefine what’s possible. With
+          innovative tools, dynamic multiplayer modes, and a vibrant community, we provide
+          the ultimate platform to unleash your creativity and strategic prowess.
         </p>
       </section>
 
       <section>
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Have questions, feedback, or ready to embark on your OrbRaid journey? Reach out
+          Have questions, feedback, or ready to embark on your Cryonix journey? Reach out
           to us at
-          <a href="mailto:support@orbraid.com" class="text-blue-600 hover:underline">
-            support@orbraid.com
+          <a href="mailto:support@cryonix.com" class="text-blue-600 hover:underline">
+            support@cryonix.com
           </a>
           . We’re here to help and celebrate your success!
         </p>
@@ -67,5 +67,5 @@ useGameAboutSeo();
 </script>
 
 <style scoped>
-/* Optional: Add any additional custom styles if needed */
+/* Optional: Add additional custom styles if needed */
 </style>
