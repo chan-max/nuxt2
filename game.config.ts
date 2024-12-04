@@ -4,30 +4,30 @@ import { defineGameConfig } from "./common/config"
 export default defineGameConfig({
     tailwindColors: {
         'custom': {
-            '50': '#f7f7f7',
-            '100': '#ededed',
-            '200': '#dfdfdf',
-            '300': '#cccccc',
-            '400': '#adadad',
-            '500': '#999999',
-            '600': '#888888',
-            '700': '#7b7b7b',
-            '800': '#676767',
-            '900': '#545454',
-            '950': '#363636',
+            '50': '#effefb',
+            '100': '#c7fff4',
+            '200': '#83ffe7',
+            '300': '#50f8d7',
+            '400': '#1de4bd',
+            '500': '#04c8a2',
+            '600': '#00a182',
+            '700': '#058068',
+            '800': '#0a6553',
+            '900': '#0d5446',
+            '950': '#003329',
         },
         'second': {
-                '50': '#f6ffe5',
-                '100': '#e9ffc7',
-                '200': '#d2ff95',
-                '300': '#b8ff65',
-                '400': '#93f625',
-                '500': '#73dd05',
-                '600': '#56b100',
-                '700': '#428605',
-                '800': '#37690b',
-                '900': '#2f590e',
-                '950': '#153201',
+            '50': '#effefb',
+            '100': '#c7fff4',
+            '200': '#83ffe7',
+            '300': '#50f8d7',
+            '400': '#1de4bd',
+            '500': '#04c8a2',
+            '600': '#00a182',
+            '700': '#058068',
+            '800': '#0a6553',
+            '900': '#0d5446',
+            '950': '#003329',
         }
     },
 
@@ -37,9 +37,9 @@ export default defineGameConfig({
 
     gtmID: 'GTM-WPZQPNBH',
 
-    "brandName": "InferGrid",
-    "tagline": "Master the grid, dominate challenges, and unite through strategy",
-    "metaDescription": "Discover InferGrid, the ultimate platform for gamers seeking innovative challenges, tactical grid-based gameplay, and a thriving multiplayer community. Shape your strategy, connect with allies, and redefine victory!",
-    "metaKeywords": "InferGrid, gaming platform, grid-based games, online strategy, multiplayer gaming, tactical gameplay, immersive challenges, game community, cooperative games, play online"
+    "brandName": "CelForge",
+    "tagline": "Forge your destiny, create worlds, and conquer challenges",
+    "metaDescription": "Welcome to CelForge, the ultimate hub for gamers and creators to shape their worlds, master strategic gameplay, and thrive in a dynamic multiplayer universe. Unite, innovate, and leave your mark!",
+    "metaKeywords": "CelForge, gaming platform, world-building games, online strategy, multiplayer gaming, creative gameplay, immersive challenges, game community, cooperative games, play online"
 
 })

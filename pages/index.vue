@@ -6,28 +6,28 @@
       <div class="flex flex-wrap md:flex-col gap-4 mb-6">
         <UButton
           to="/search"
-          color="blue"
+          color="custom"
           variant="outline"
           icon="i-heroicons-magnifying-glass-circle"
-          class="flex-grow md:w-full h-10 text-blue-500 border-blue-500 border-2 hover:bg-blue-100 transition-all font-bold"
+          class="flex-grow md:w-full h-10 text-custom-500 border-custom-500 border-2 hover:bg-custom-50 hover:text-custom-700 transition-all font-bold rounded-lg shadow-md"
         >
           Search Games
         </UButton>
         <UButton
           to="/games"
-          color="green"
+          color="custom"
           variant="outline"
           icon="i-heroicons-play-circle"
-          class="flex-grow md:w-full h-10 text-green-500 border-green-500 border-2 hover:bg-green-100 transition-all font-bold"
+          class="flex-grow md:w-full h-10 text-custom-500 border-custom-500 border-2 hover:bg-custom-50 hover:text-custom-700 transition-all font-bold rounded-lg shadow-md"
         >
           All Games
         </UButton>
         <UButton
           to="/about"
-          color="purple"
+          color="custom"
           variant="outline"
           icon="i-heroicons-information-circle"
-          class="flex-grow md:w-full h-10 text-purple-500 border-purple-500 border-2 hover:bg-purple-100 transition-all font-bold"
+          class="flex-grow md:w-full h-10 text-custom-500 border-custom-500 border-2 hover:bg-custom-50 hover:text-custom-700 transition-all font-bold rounded-lg shadow-md"
         >
           About Us
         </UButton>
@@ -46,7 +46,7 @@
             v-for="(category, index) in topCategories"
             :key="index"
             @click="categoryClick(category as string)"
-            class="group flex items-center px-4 py-3 bg-gradient-to-r from-gray-100 to-gray-50 border-b border-gray-200 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
+            class="group flex items-center px-4 py-3 bg-gradient-to-r from-custom-100 to-custom-50 border-b border-custom-200 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
             :class="{ 'bg-yellow-100': index === 0 }"
           >
             <span
@@ -77,7 +77,7 @@
             v-for="(category, index) in categoriesData"
             :key="index"
             @click="categoryClick(category as string)"
-            class="group flex items-center px-4 py-3 bg-gradient-to-r from-gray-100 to-gray-50 border-b border-gray-200 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
+            class="group flex items-center px-4 py-3 bg-gradient-to-r from-custom-100 to-custom-50 border-b border-custom-200 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@
     </aside>
 
     <!-- 右侧主要内容 -->
-    <main class="w-full md:w-5/6 p-2  md:p-12 lg:p-12 xl:p-12">
+    <main class="w-full md:w-5/6 p-2 md:p-12 lg:p-12 xl:p-12">
       <!-- Random Games Section -->
       <section class="mb-12">
         <header class="flex items-center justify-between mb-4">

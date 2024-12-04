@@ -11,8 +11,8 @@
         <p class="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
           This Privacy Policy, together with the Terms of Service posted on our website,
           outlines the general rules and policies governing your use of
-          <span class="font-semibold">InferGrid</span>. Depending on your activities while
-          visiting InferGrid, you may be required to agree to additional terms of service.
+          <span class="font-semibold">CelForge</span>. Depending on your activities while
+          visiting CelForge, you may be required to agree to additional terms of service.
         </p>
       </section>
 
@@ -20,7 +20,7 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">Website Visitors</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Like most websites, InferGrid collects non-personally-identifying information
+          Like most websites, CelForge collects non-personally-identifying information
           that web browsers and servers typically make available. This includes details
           like browser type, language preference, referring site, and the date and time of
           each visitor request. From time to time, we may use this information in
@@ -33,9 +33,9 @@
           Personally-Identifying Information
         </h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Certain interactions with InferGrid may require the collection of
+          Certain interactions with CelForge may require the collection of
           personally-identifying information, such as when you create an account or join
-          a strategic grid game. The type and amount of information collected depend on the
+          a collaborative game. The type and amount of information collected depend on the
           nature of the interaction, typically including a username, email address, and gameplay
           preferences.
         </p>
@@ -44,7 +44,7 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">Security</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Protecting your personal information is a top priority at InferGrid. While we
+          Protecting your personal information is a top priority at CelForge. While we
           employ industry-standard methods to safeguard your data, no online transmission
           or storage system is 100% secure. We strive to protect your information but
           cannot guarantee complete security.
@@ -54,7 +54,7 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">Advertisements</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Ads appearing on InferGrid may be served by our advertising partners, who may use
+          Ads appearing on CelForge may be served by our advertising partners, who may use
           cookies to collect information. These cookies help deliver targeted
           advertisements that align with your gaming interests and preferences. Please
           review the privacy policies of these advertising partners to understand their
@@ -65,7 +65,7 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">Links to External Sites</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          InferGrid may include links to external websites that are not operated by us. If
+          CelForge may include links to external websites that are not operated by us. If
           you follow a third-party link, you will be redirected to their website. We
           strongly recommend reviewing the privacy policies and terms of service of any
           external site you visit to ensure your data remains protected.
@@ -75,8 +75,8 @@
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">Aggregated Statistics</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          InferGrid may collect aggregated, anonymized data about user behavior, such as
-          time spent in specific grid challenges or community activities. This data is
+          CelForge may collect aggregated, anonymized data about user behavior, such as
+          time spent in specific creative challenges or community activities. This data is
           used to improve the overall player experience and optimize gameplay features.
           Aggregated data never includes personally-identifying information.
         </p>
@@ -85,7 +85,7 @@
       <section>
         <h2 class="text-3xl font-bold text-gray-800 mb-4">Cookies</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          To personalize your gaming experience, InferGrid uses cookies and similar
+          To personalize your gaming experience, CelForge uses cookies and similar
           technologies. These tools help deliver tailored content, provide customized
           game recommendations, and save your preferences. By continuing to use our website
           without adjusting your cookie settings, you agree to our use of cookies.

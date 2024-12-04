@@ -5,52 +5,52 @@
 
       <section class="mb-8">
         <p class="text-gray-700 text-lg leading-relaxed">
-          Welcome to <span class="font-semibold">InferGrid</span>—a platform designed for
-          players who thrive on strategy, innovation, and tactical challenges. At InferGrid, 
-          we unite gamers to explore dynamic grids, master strategic gameplay, and build 
-          lasting connections.
+          Welcome to <span class="font-semibold">CelForge</span>—a platform where 
+          creativity, strategy, and community converge. At CelForge, we empower players 
+          to craft their worlds, master innovative gameplay, and connect with like-minded 
+          creators and adventurers.
         </p>
       </section>
 
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-          A World of Strategic Grids
+          Forge Your Destiny
         </h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          InferGrid isn’t just about gaming—it’s about mastering innovative gameplay 
-          and redefining tactics. Here, you’ll navigate intricate challenges, refine your 
-          strategies, and collaborate with others to dominate the grid.
+          CelForge isn’t just about playing games—it’s about creating, innovating, and 
+          conquering challenges. Here, you’ll shape dynamic worlds, refine your strategies, 
+          and build something extraordinary with the power of your imagination.
         </p>
       </section>
 
       <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Community at the Core</h2>
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Community at the Heart</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          <span class="font-semibold">At InferGrid, community is everything.</span> We are
-          built on the principles of collaboration and shared success. Whether you’re 
-          forming alliances, exchanging strategies, or celebrating victories, you’re part 
-          of a global network of passionate gamers.
+          <span class="font-semibold">At CelForge, community is everything.</span> We are 
+          a thriving hub for collaboration, innovation, and shared creativity. Whether 
+          you're building alliances, crafting unique experiences, or celebrating triumphs, 
+          you're part of a vibrant global network.
         </p>
       </section>
 
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-          Innovate, Collaborate, Dominate
+          Create, Collaborate, Conquer
         </h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          InferGrid empowers you to tackle the toughest challenges with ingenuity and 
-          teamwork. Join forces with like-minded players, shape your strategies, and leave 
-          your mark in a world of evolving grids and endless possibilities.
+          CelForge empowers you to turn ideas into reality and challenges into victories. 
+          Join forces with fellow players, forge unique paths, and leave your mark in a 
+          constantly evolving universe of infinite possibilities.
         </p>
       </section>
 
       <section>
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Have questions, feedback, or ready to embark on your InferGrid journey? Reach out
+          Have questions, feedback, or ready to embark on your CelForge journey? Reach out 
           to us at
-          <a href="mailto:support@infergrid.com" class="text-blue-600 hover:underline">
-            support@infergrid.com
+          <a href="mailto:support@celforge.com" class="text-blue-600 hover:underline">
+            support@celforge.com
           </a>
           . We’re here to help and celebrate your success!
         </p>
