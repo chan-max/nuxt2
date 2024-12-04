@@ -35,7 +35,7 @@ export default defineGameConfig({
     apiURL: 'https://api.ohioon.com',
     favicon: '/favicon.svg',
 
-    gtmID: 'GTM-WPZQPNBH',
+    gtmID: 'GTM-MBCGFR77',
 
     "brandName": "CelForge",
     "tagline": "Forge your destiny, create worlds, and conquer challenges",
