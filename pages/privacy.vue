@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen py-12">
+  <div class="min-h-screen py-12 ">
     <main class="container mx-auto px-6 py-10 bg-white shadow-2xl rounded-xl">
       <!-- Page Header -->
       <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">
@@ -8,11 +8,11 @@
 
       <!-- Introduction -->
       <section class="mb-10">
-        <p class="text-gray-800 text-lg leading-relaxed text-center max-w-4xl mx-auto">
+        <p class="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
           This Privacy Policy, along with the Terms of Service, outlines the general rules
           and policies governing your use of
-          <span class="font-semibold text-blue-600">Thundrix</span>. Depending on your
-          activities while visiting Thundrix, you may be required to agree to additional
+          <span class="font-semibold text-indigo-600">EchoCry</span>. Depending on your
+          activities while visiting EchoCry, you may be required to agree to additional
           terms of service.
         </p>
       </section>
@@ -20,8 +20,8 @@
       <!-- Website Visitors -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Website Visitors</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Like most websites, Thundrix collects non-personally-identifying information
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Like most websites, EchoCry collects non-personally-identifying information
           that web browsers and servers typically make available. This includes details
           like browser type, language preference, referring site, and the date and time of
           each visitor request. This aggregated data helps us understand usage trends and
@@ -34,8 +34,8 @@
         <h2 class="text-3xl font-bold text-gray-900 mb-4">
           Personally-Identifying Information
         </h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Certain interactions with Thundrix may require the collection of
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Certain interactions with EchoCry may require the collection of
           personally-identifying information, such as when you create an account, leave
           comments, or participate in activities. Typically, this includes details like
           your username, email address, and gameplay preferences.
@@ -45,8 +45,8 @@
       <!-- Security -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Security</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Protecting your personal information is a top priority at Thundrix. We use
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Protecting your personal information is a top priority at EchoCry. We use
           industry-standard methods to safeguard your data. However, no online
           transmission or storage system is entirely secure. While we strive to protect
           your information, we cannot guarantee complete security.
@@ -56,8 +56,8 @@
       <!-- Advertisements -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Advertisements</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Ads displayed on Thundrix may be served by advertising partners, who may use
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Ads displayed on EchoCry may be served by advertising partners, who may use
           cookies to collect data. These cookies enable targeted advertisements based on
           your interests and preferences. Please refer to the privacy policies of these
           partners to understand their data practices.
@@ -67,8 +67,8 @@
       <!-- Links to External Sites -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Links to External Sites</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Thundrix may contain links to external websites not operated by us. If you click
+        <p class="text-gray-700 text-lg leading-relaxed">
+          EchoCry may contain links to external websites not operated by us. If you click
           on a third-party link, you will be directed to their site. We strongly encourage
           you to review the privacy policies and terms of service of any external site to
           ensure your data remains protected.
@@ -78,8 +78,8 @@
       <!-- Aggregated Statistics -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Aggregated Statistics</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Thundrix may collect anonymized, aggregated data about user behavior, such as
+        <p class="text-gray-700 text-lg leading-relaxed">
+          EchoCry may collect anonymized, aggregated data about user behavior, such as
           popular pages or average time spent on the platform. This data helps us improve
           user experiences and optimize features, and it never includes
           personally-identifying information.
@@ -89,8 +89,8 @@
       <!-- Cookies -->
       <section>
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Cookies</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Thundrix uses cookies and similar technologies to personalize your experience.
+        <p class="text-gray-700 text-lg leading-relaxed">
+          EchoCry uses cookies and similar technologies to personalize your experience.
           These tools allow us to deliver relevant content, display tailored
           advertisements, and save your preferences. By continuing to use our site without
           changing your cookie settings, you consent to our use of cookies.
@@ -106,8 +106,8 @@ useGamePrivacySeo();
 </script>
 
 <style scoped>
-/* Optional: Customize additional styles for Thundrix branding */
-.text-blue-600 {
-  color: #4a90e2; /* Thundrix primary color */
+/* Optional: Customize additional styles for EchoCry branding */
+.text-indigo-600 {
+  color: #5a67d8; /* EchoCry brand accent color */
 }
 </style>

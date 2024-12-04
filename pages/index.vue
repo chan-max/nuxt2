@@ -36,7 +36,7 @@
       <!-- Top Categories -->
       <div class="mb-6">
         <h2
-          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3 "
+          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3"
         >
           <UIcon name="i-basil-award-solid" class="w-6 h-6 text-yellow-500 mr-2" />
           <span class="flex-grow">TOP {{ topCategories?.length }}</span>
@@ -67,7 +67,7 @@
       <!-- Group Categories -->
       <div>
         <h2
-          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3 "
+          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3"
         >
           <UIcon name="i-heroicons-archive-box-solid" class="w-6 h-6 mr-2" />
           <span class="flex-grow">{{ categoriesData?.length }} GROUPS</span>
@@ -79,20 +79,7 @@
             @click="categoryClick(category as string)"
             class="group flex items-center px-4 py-3 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-5 w-5 text-gray-400 group-hover:text-white transition-colors"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M5 3v18l7-5 7 5V3z"
-              />
-            </svg>
+          <img src="/cloud.svg" class="w-8 h-8">
             <span
               class="text-base font-semibold text-gray-500 group-hover:text-white pl-3"
             >
@@ -158,7 +145,7 @@
             v-for="tag in visibleTags"
             :key="tag"
             @click="searchTag(tag)"
-            class="px-4 py-2 bg-gradient-to-r from-custom-300 via-custom-400 to-custom-500 text-white text-sm font-semibold shadow-lg cursor-pointer transition transform hover:scale-105 hover:shadow-xl hover:from-indigo-500 hover:via-purple-700 hover:to-pink-600"
+            class="tag-item"
           >
             {{ tag }}
           </span>
@@ -367,5 +354,28 @@ function searchTag(tag: string) {
     border-right: none;
     margin-bottom: 1rem;
   }
+}
+
+.tag-item {
+  display: inline-block;
+  padding: 10px 16px; /* 标签的内边距 */
+  background-image: url("/cloud.svg"); /* 云朵背景 */
+  background-size: cover; /* 确保背景图填充标签 */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #3d81e1; /* 白色文字，适合云朵背景 */
+  font-size: 0.875rem; /* 字体大小 */
+  font-weight: 600; /* 字体加粗 */
+  border-radius: 12px; /* 标签的圆角 */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  max-width: 120px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tag-item:hover {
+  transform: scale(1.1); /* 鼠标悬停放大效果 */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* 加深阴影 */
 }
 </style>

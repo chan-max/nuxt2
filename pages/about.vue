@@ -6,62 +6,63 @@
 
       <!-- Welcome Section -->
       <section class="mb-8">
-        <p class="text-gray-800 text-lg leading-relaxed text-center max-w-4xl mx-auto">
-          Welcome to <span class="font-semibold text-blue-600">Thundrix</span>—where
-          innovation meets the ultimate gaming experience. Built for adventurers,
-          strategists, and visionaries, Thundrix is your gateway to thrilling challenges,
-          immersive gameplay, and a global community of passionate players.
+        <p class="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
+          Welcome to <span class="font-semibold text-indigo-600">EchoCry</span>—where
+          mystery, sound, and adventure come together. EchoCry is your gateway to a
+          groundbreaking platform where auditory exploration meets thrilling gameplay.
+          Step into a world where every sound reveals a new story.
         </p>
       </section>
 
-      <!-- Transformative Gaming -->
+      <!-- Sound-Based Exploration -->
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-900 mb-4 text-center">
-          Unleashing the Power of Immersion
+          A New Dimension of Gaming
         </h2>
-        <p class="text-gray-800 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-          Thundrix is more than just a gaming platform—it’s a transformative journey into
-          worlds of creativity and innovation. Whether you’re conquering epic battles,
-          exploring vast landscapes, or forging strategic alliances, every moment is an
-          opportunity to excel.
+        <p class="text-gray-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+          EchoCry is not just about playing—it’s about listening, exploring, and solving.
+          Dive into an auditory adventure where every echo guides you closer to the truth.
+          With innovative sound-based mechanics, every challenge is a chance to think
+          beyond the visual and immerse yourself in mystery.
         </p>
       </section>
 
       <!-- Community Section -->
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-900 mb-4 text-center">
-          A Vibrant Global Community
+          A Community of Adventurers
         </h2>
-        <p class="text-gray-800 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-          <span class="font-semibold text-blue-600">At Thundrix, community is everything.</span>
-          We unite players from around the globe to collaborate, compete, and celebrate
-          achievements. Dive into a network of innovators who inspire and challenge each
-          other, making every game a shared triumph.
+        <p class="text-gray-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+          <span class="font-semibold text-indigo-600">At EchoCry, community is the core of the experience.</span>
+          We bring together puzzle-solvers, storytellers, and gamers who share a love for
+          the unknown. Join a vibrant network of players who think differently and inspire
+          each other to uncover every hidden secret.
         </p>
       </section>
 
-      <!-- Innovation Meets Ambition -->
+      <!-- Innovation Meets Mystery -->
       <section class="mb-8">
         <h2 class="text-2xl font-semibold text-gray-900 mb-4 text-center">
-          Innovation Meets Ambition
+          Where Innovation Meets Mystery
         </h2>
-        <p class="text-gray-800 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-          With cutting-edge tools and limitless possibilities, Thundrix empowers you to
-          turn ambition into achievement. Redefine what's possible in gaming, innovate
-          with creativity, and leave a legacy in immersive worlds.
+        <p class="text-gray-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+          EchoCry redefines gaming by combining innovative sound-based mechanics with
+          immersive storytelling. Solve puzzles, uncover hidden truths, and let your
+          imagination guide you. This is where your senses come alive, and every step
+          forward is a testament to your curiosity.
         </p>
       </section>
 
       <!-- Contact Section -->
       <section>
         <h2 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Contact Us</h2>
-        <p class="text-gray-800 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-          Have questions, feedback, or ready to embark on your Thundrix adventure? Reach
-          out to us at
-          <a href="mailto:support@thundrix.com" class="text-blue-600 hover:underline">
-            support@thundrix.com
+        <p class="text-gray-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+          Have questions, feedback, or ready to begin your EchoCry journey? Connect with
+          us at
+          <a href="mailto:support@echocry.com" class="text-indigo-600 hover:underline">
+            support@echocry.com
           </a>
-          . We’re here to help and celebrate your success!
+          . We’re here to guide you and celebrate every discovery you make!
         </p>
       </section>
     </main>
@@ -75,8 +76,8 @@ useGameAboutSeo();
 </script>
 
 <style scoped>
-/* Optional: Customize additional styles for Thundrix branding */
-.text-blue-600 {
-  color: #4a90e2; /* Thundrix brand color */
+/* Optional: Customize additional styles for EchoCry branding */
+.text-indigo-600 {
+  color: #5a67d8; /* EchoCry brand accent color */
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen py-12 ">
+  <div class="min-h-screen py-12">
     <main class="container mx-auto px-6 py-10 bg-white shadow-2xl rounded-xl">
       <!-- Page Header -->
       <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">
@@ -8,10 +8,10 @@
 
       <!-- Welcome Section -->
       <section class="mb-10">
-        <p class="text-gray-800 text-lg leading-relaxed text-center max-w-4xl mx-auto">
-          Welcome to <span class="font-semibold text-blue-600">Thundrix</span>! These
-          terms and conditions outline the rules and regulations for using Thundrix's
-          website. By accessing Thundrix, you agree to these terms. If you do not agree,
+        <p class="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
+          Welcome to <span class="font-semibold text-indigo-600">EchoCry</span>! These
+          terms and conditions outline the rules and regulations for using EchoCry's
+          platform. By accessing EchoCry, you agree to these terms. If you do not agree,
           we kindly ask you to discontinue using this website.
         </p>
       </section>
@@ -19,15 +19,15 @@
       <!-- Terminology Section -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Terminology</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
+        <p class="text-gray-700 text-lg leading-relaxed">
           The following terminology applies to these Terms and Conditions, Privacy Policy,
           and Disclaimer Notice:
         </p>
-        <ul class="list-disc list-inside text-gray-800 mt-4 space-y-2">
-          <li>"Client," "You," and "Your" refer to you, the user of this website.</li>
-          <li>"The Company," "We," "Our," and "Us" refer to Thundrix.</li>
+        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+          <li>"Client," "You," and "Your" refer to you, the user of this platform.</li>
+          <li>"The Company," "We," "Our," and "Us" refer to EchoCry.</li>
           <li>
-            "Party," "Parties," or "Us" refers to both the Client and Thundrix
+            "Party," "Parties," or "Us" refers to both the Client and EchoCry
             collectively.
           </li>
         </ul>
@@ -36,10 +36,10 @@
       <!-- Cookies Section -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Cookies</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Thundrix uses cookies to enhance your experience. By continuing to use our
+        <p class="text-gray-700 text-lg leading-relaxed">
+          EchoCry uses cookies to enhance your experience. By continuing to use our
           website, you consent to the use of cookies as outlined in our
-          <a href="/privacy-policy" class="text-blue-600 hover:underline"
+          <a href="/privacy-policy" class="text-indigo-600 hover:underline"
             >Privacy Policy</a
           >.
         </p>
@@ -48,54 +48,55 @@
       <!-- License Section -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">License</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Unless otherwise stated, Thundrix and its licensors own the intellectual
-          property rights for all material on this website. All rights are reserved. The
-          following actions are strictly prohibited without prior permission:
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Unless otherwise stated, EchoCry and its licensors own the intellectual property
+          rights for all material on this platform. All rights are reserved. The following
+          actions are strictly prohibited without prior permission:
         </p>
-        <ul class="list-disc list-inside text-gray-800 mt-4 space-y-2">
-          <li>Republishing material from Thundrix.</li>
-          <li>Selling, renting, or sub-licensing material from Thundrix.</li>
-          <li>Reproducing, duplicating, or copying material from Thundrix.</li>
-          <li>Redistributing content from Thundrix.</li>
+        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+          <li>Republishing material from EchoCry.</li>
+          <li>Selling, renting, or sub-licensing material from EchoCry.</li>
+          <li>Reproducing, duplicating, or copying material from EchoCry.</li>
+          <li>Redistributing content from EchoCry.</li>
         </ul>
       </section>
 
       <!-- Hyperlinking Section -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Hyperlinking to Our Content</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Certain organizations may link to our website without prior approval, such as
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Certain organizations may link to our platform without prior approval, such as
           government agencies, search engines, and news organizations. However, these
-          links must not falsely imply sponsorship or endorsement by Thundrix.
+          links must not falsely imply sponsorship or endorsement by EchoCry.
         </p>
       </section>
 
       <!-- Content Liability Section -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Content Liability</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          Thundrix is not responsible for content appearing on your website. You agree to
-          indemnify us against any claims arising from such content. Links to Thundrix
-          must not promote unlawful activities or violate the rights of others.
+        <p class="text-gray-700 text-lg leading-relaxed">
+          EchoCry is not responsible for content appearing on your platform. You agree to
+          indemnify us against any claims arising from such content. Links to EchoCry must
+          not promote unlawful activities or violate the rights of others.
         </p>
       </section>
 
       <!-- Disclaimer Section -->
       <section class="mb-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Disclaimer</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
-          To the fullest extent permitted by law, Thundrix excludes all warranties and
-          disclaims liability for any loss or damage arising from the use of this website.
+        <p class="text-gray-700 text-lg leading-relaxed">
+          To the fullest extent permitted by law, EchoCry excludes all warranties and
+          disclaims liability for any loss or damage arising from the use of this
+          platform.
         </p>
       </section>
 
       <!-- Contact Section -->
       <section>
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Contact</h2>
-        <p class="text-gray-800 text-lg leading-relaxed">
+        <p class="text-gray-700 text-lg leading-relaxed">
           If you have any questions regarding these terms, feel free to
-          <a href="/contact" class="text-blue-600 hover:underline">contact us</a>.
+          <a href="/contact" class="text-indigo-600 hover:underline">contact us</a>.
         </p>
       </section>
     </main>
@@ -109,8 +110,8 @@ useGameTermsSeo();
 </script>
 
 <style scoped>
-/* Optional: Customize additional styles for Thundrix branding */
-.text-blue-600 {
-  color: #4a90e2; /* Thundrix primary color */
+/* Optional: Customize additional styles for EchoCry branding */
+.text-indigo-600 {
+  color: #5a67d8; /* EchoCry primary color */
 }
 </style>

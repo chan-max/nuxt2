@@ -4,30 +4,30 @@ import { defineGameConfig } from "./common/config"
 export default defineGameConfig({
     tailwindColors: {
         'custom': {
-            '50': '#fff7ec',
-            '100': '#ffedd3',
-            '200': '#ffd8a5',
-            '300': '#ffbb6d',
-            '400': '#ff9232',
-            '500': '#ff730a',
-            '600': '#ff5900',
-            '700': '#cc3e02',
-            '800': '#a1310b',
-            '900': '#822b0c',
-            '950': '#461204',
+            '50': '#f0f8ff',
+            '100': '#e0effe',
+            '200': '#b9e0fe',
+            '300': '#7cc7fd',
+            '400': '#36acfa',
+            '500': '#0c92eb',
+            '600': '#0073c9',
+            '700': '#015aa3',
+            '800': '#064d86',
+            '900': '#0b416f',
+            '950': '#07294a',
         },
         'second': {
-            '50': '#fff7ec',
-            '100': '#ffedd3',
-            '200': '#ffd8a5',
-            '300': '#ffbb6d',
-            '400': '#ff9232',
-            '500': '#ff730a',
-            '600': '#ff5900',
-            '700': '#cc3e02',
-            '800': '#a1310b',
-            '900': '#822b0c',
-            '950': '#461204',
+            '50': '#f0f8ff',
+            '100': '#e0effe',
+            '200': '#b9e0fe',
+            '300': '#7cc7fd',
+            '400': '#36acfa',
+            '500': '#0c92eb',
+            '600': '#0073c9',
+            '700': '#015aa3',
+            '800': '#064d86',
+            '900': '#0b416f',
+            '950': '#07294a',
         }
     },
 
@@ -38,9 +38,9 @@ export default defineGameConfig({
 
     gtmID: 'GTM-WPZQPNBH',
 
-    "brandName": "Thundrix",
-    "tagline": "Unleashing the power of immersive gaming",
-    "metaDescription": "Welcome to Thundrix, where innovation meets the ultimate gaming experience. Embark on thrilling adventures, master strategic gameplay, and join a global community of passionate players.",
-    "metaKeywords": "Thundrix, gaming platform, immersive games, strategy games, multiplayer adventures, innovative gaming, virtual worlds, global gaming community, play online, cutting-edge gaming"
+    "brandName": "EchoCry",
+    "tagline": "Unveiling mysteries through sound and adventure",
+    "metaDescription": "Welcome to EchoCry, a groundbreaking platform where auditory exploration meets thrilling gameplay. Immerse yourself in a world of mystery, solve puzzles, and join a community of adventurers who think beyond the visual.",
+    "metaKeywords": "EchoCry, immersive gaming, sound-based games, mystery exploration, puzzle-solving, auditory adventures, innovative gaming, multiplayer community, unique gameplay, play online"
   
 })
