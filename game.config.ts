@@ -36,7 +36,7 @@ export default defineGameConfig({
     favicon: '/favicon.svg',
 
 
-    gtmID: 'GTM-WPZQPNBH',
+    gtmID: 'GTM-5STN32HH',
 
     "brandName": "NovaClash",
     "tagline": "Unleashing battles with strategy and creativity",
