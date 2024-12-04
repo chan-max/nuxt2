@@ -35,7 +35,7 @@ export default defineGameConfig({
     apiURL: 'https://api.ohioon.com',
     favicon: '/favicon.svg',
 
-    gtmID: 'GTM-WPZQPNBH',
+    gtmID: 'GTM-PSH8QHNT',
 
     "brandName": "Cryonix",
     "tagline": "Explore, strategize, and dominate the gaming frontier",
