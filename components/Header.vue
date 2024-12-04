@@ -1,6 +1,7 @@
 <template>
   <header
-    class="text-second-500 shadow-md z-10 bg-custom-000 border-b-2 border-second-500"
+    class="text-white shadow-md z-10 bg-custom-000 border-b-2 border-second-500"
+    style="background-image:url(/bg.svg)"
   >
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
       <!-- 左侧：Logo 和导航菜单 -->
@@ -21,27 +22,27 @@
           <NuxtLink
             to="/"
             class="flex flex-col items-center justify-center space-y-1 group"
-            active-class="underline decoration-2 underline-offset-4 text-second-600"
+            active-class="underline decoration-2 underline-offset-4 text-white"
           >
-            <span class="text-lg font-bold group-hover:text-second-500 transition">
+            <span class="text-lg font-bold group-hover:text-second-900 transition">
               Home
             </span>
           </NuxtLink>
           <NuxtLink
             to="/games"
             class="flex flex-col items-center justify-center space-y-1 group"
-            active-class="underline decoration-2 underline-offset-4 text-second-600"
+            active-class="underline decoration-2 underline-offset-4 text-white"
           >
-            <span class="text-lg font-bold group-hover:text-second-500 transition">
+            <span class="text-lg font-bold group-hover:text-second-900 transition">
               Games
             </span>
           </NuxtLink>
           <NuxtLink
             to="/about"
             class="flex flex-col items-center justify-center space-y-1 group"
-            active-class="underline decoration-2 underline-offset-4 text-second-600"
+            active-class="underline decoration-2 underline-offset-4 text-white"
           >
-            <span class="text-lg font-bold group-hover:text-second-500 transition">
+            <span class="text-lg font-bold group-hover:text-second-900 transition">
               About
             </span>
           </NuxtLink>

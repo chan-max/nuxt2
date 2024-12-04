@@ -1,48 +1,49 @@
 <template>
-  <div class="bg-white rounded-lg duration-300 flex flex-col h-full">
+  <div
+    class="bg-gradient-to-r from-second-500 to-second-400 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full transform hover:scale-105"
+  >
     <!-- Game Thumbnail -->
-    <div class="relative aspect-w-16 aspect-h-9">
+    <div class="relative aspect-w-16 aspect-h-9 group">
       <NuxtLink :to="`/detail/${game.id}`" class="block h-full">
         <img
           :src="game.thumb || '/default-thumbnail.jpg'"
           :alt="game.title || 'Game Thumbnail'"
-          class="w-full h-full object-cover rounded-lg"
+          class="w-full h-full object-cover rounded-t-lg transition-transform transform group-hover:scale-110"
         />
         <!-- Play Overlay -->
         <div
-          class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center rounded-t-lg"
+          class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-t-lg"
         >
-          <span class="text-white text-base font-medium">View Details</span>
+          <span class="text-white text-base font-bold tracking-wide"> Explore Game </span>
         </div>
       </NuxtLink>
     </div>
 
     <!-- Game Details -->
-    <div class="p-3 flex flex-col flex-grow">
+    <div class="p-6 flex flex-col flex-grow text-custom-500">
       <!-- Game Title -->
-      <h2
-        class="text-base font-semibold text-second-500 hover:text-second-400 transition truncate"
+      <NuxtLink
+        :to="`/detail/${game.id}`"
+        class="text-xl font-extrabold truncate hover:underline"
         title="Click to view details"
       >
         {{ game.title || "Untitled Game" }}
-      </h2>
+      </NuxtLink>
 
       <!-- Game Description -->
-      <p class="text-xs text-gray-600 line-clamp-2 mt-1" title="Game Description">
+      <p class="text-sm opacity-90 mt-2 line-clamp-3" title="Game Description">
         {{ game.description || "No description available." }}
       </p>
 
       <!-- Tags -->
-      <div class="flex flex-wrap gap-2 mt-2">
+      <div class="flex flex-wrap gap-3 mt-4">
         <template v-for="tag in formatTags(game.tags)" :key="tag">
           <span
             @click="tagClick(tag)"
-            class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-[10px] cursor-pointer hover:bg-second-100 hover:text-second-500 shadow transition-all"
+            class="bg-white/10 text-custom-500 px-3 py-1 rounded-full text-xs cursor-pointer hover:bg-white/20 shadow-md transition-all"
             :title="getTagTitle(tag)"
           >
-            <NuxtLink to="/search">
-              {{ tag }}
-            </NuxtLink>
+            {{ tag }}
           </span>
         </template>
       </div>
@@ -51,7 +52,7 @@
       <div class="mt-auto flex justify-center">
         <button
           @click.stop="playnow"
-          class="bg-second-500 text-white px-3 py-1 my-2 rounded-md text-xs font-medium shadow-md hover:bg-second-600 hover:shadow-lg transition-transform transform hover:scale-105"
+          class="bg-white text-second-500 px-4 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-100 hover:text-second-600 transition-transform transform hover:scale-110"
         >
           Play Now
         </button>
@@ -71,7 +72,6 @@ const props = defineProps({
   },
 });
 
-const router = useRouter();
 const emits = defineEmits(["playnow"]);
 
 function playnow() {
@@ -97,11 +97,29 @@ function getTagTitle(tag) {
 
 <style scoped>
 /* For truncating and cleaner text flow */
-.line-clamp-2 {
+.line-clamp-3 {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Aspect ratio utility */
+.aspect-w-16 {
+  width: 100%;
+}
+
+.aspect-h-9 {
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+}
+
+.aspect-w-16.aspect-h-9 > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 </style>

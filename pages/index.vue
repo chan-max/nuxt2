@@ -1,7 +1,8 @@
 <template>
   <div class="flex flex-wrap md:flex-nowrap w-full">
     <!-- 左侧分类导航栏 -->
-    <aside class="w-full md:w-1/6 py-8 px-4 bg-gray-100 md:bg-transparent">
+
+    <aside class="w-full md:w-1/6 py-8 px-4 bg-gray-50 md:bg-transparent">
       <!-- Navigation Buttons -->
       <div class="flex flex-wrap md:flex-col gap-4 mb-6">
         <UButton
@@ -9,7 +10,7 @@
           color="custom"
           variant="outline"
           icon="i-heroicons-magnifying-glass-circle"
-          class="flex-grow md:w-full h-10 text-custom-500 border-custom-500 border-2 hover:bg-custom-50 hover:text-custom-700 transition-all font-bold rounded-lg shadow-md"
+          class="flex-grow md:w-full h-10 text-custom-500 border-custom-500 border hover:bg-custom-50 hover:text-custom-700 transition-all font-bold rounded-lg shadow"
         >
           Search Games
         </UButton>
@@ -18,7 +19,7 @@
           color="custom"
           variant="outline"
           icon="i-heroicons-play-circle"
-          class="flex-grow md:w-full h-10 text-custom-500 border-custom-500 border-2 hover:bg-custom-50 hover:text-custom-700 transition-all font-bold rounded-lg shadow-md"
+          class="flex-grow md:w-full h-10 text-custom-500 border-custom-500 border hover:bg-custom-50 hover:text-custom-700 transition-all font-bold rounded-lg shadow"
         >
           All Games
         </UButton>
@@ -27,7 +28,7 @@
           color="custom"
           variant="outline"
           icon="i-heroicons-information-circle"
-          class="flex-grow md:w-full h-10 text-custom-500 border-custom-500 border-2 hover:bg-custom-50 hover:text-custom-700 transition-all font-bold rounded-lg shadow-md"
+          class="flex-grow md:w-full h-10 text-custom-500 border-custom-500 border hover:bg-custom-50 hover:text-custom-700 transition-all font-bold rounded-lg shadow"
         >
           About Us
         </UButton>
@@ -36,17 +37,17 @@
       <!-- Top Categories -->
       <div class="mb-6">
         <h2
-          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3 rounded-t-2xl rounded-b-lg"
+          class="text-lg font-bold bg-second-500 text-white px-4 py-3 flex items-center rounded"
         >
           <UIcon name="i-basil-award-solid" class="w-6 h-6 text-yellow-500 mr-2" />
-          <span class="flex-grow">TOP {{ topCategories?.length }}</span>
+          <span>TOP {{ topCategories?.length }}</span>
         </h2>
-        <div class="flex flex-col">
+        <div>
           <div
             v-for="(category, index) in topCategories"
             :key="index"
             @click="categoryClick(category as string)"
-            class="group flex items-center px-4 py-3 bg-gradient-to-r from-custom-100 to-custom-50 border-b border-custom-200 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
+            class="group flex items-center px-4 py-3 border-b hover:bg-custom-500 hover:text-white transition-all cursor-pointer"
             :class="{ 'bg-yellow-100': index === 0 }"
           >
             <span
@@ -67,17 +68,17 @@
       <!-- Group Categories -->
       <div>
         <h2
-          class="text-lg font-bold bg-second-500 text-white flex items-center px-4 py-3 rounded-t-2xl rounded-b-lg"
+          class="text-lg font-bold bg-second-500 text-white px-4 py-3 flex items-center rounded"
         >
           <UIcon name="i-heroicons-archive-box-solid" class="w-6 h-6 mr-2" />
-          <span class="flex-grow">{{ categoriesData?.length }} GROUPS</span>
+          <span>{{ categoriesData?.length }} GROUPS</span>
         </h2>
-        <div class="flex flex-col">
+        <div>
           <div
             v-for="(category, index) in categoriesData"
             :key="index"
             @click="categoryClick(category as string)"
-            class="group flex items-center px-4 py-3 bg-gradient-to-r from-custom-100 to-custom-50 border-b border-custom-200 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
+            class="group flex items-center px-4 py-3 border-b hover:bg-custom-500 hover:text-white transition-all cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +118,7 @@
             Refresh
           </button>
         </header>
-        <div class="flex flex-wrap md:flex-nowrap gap-4">
+        <div class="flex flex-wrap md:flex-nowrap gap-4 lg:h-[40rem]">
           <!-- Left: Large Game Card -->
           <div class="w-full md:w-1/3">
             <GameCard2
@@ -153,12 +154,13 @@
             Refresh Tags
           </button>
         </header>
-        <div class="flex flex-wrap gap-2">
+
+        <div class="flex flex-wrap gap-3">
           <span
             v-for="tag in visibleTags"
             :key="tag"
             @click="searchTag(tag)"
-            class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm cursor-pointer hover:bg-second-100 hover:text-second-500 transition"
+            class="px-4 py-2 bg-gray-50 text-gray-800 rounded-full text-sm font-semibold cursor-pointer shadow-md hover:bg-second-500 hover:text-white hover:shadow-lg transition-all transform hover:scale-105"
           >
             {{ tag }}
           </span>

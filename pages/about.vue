@@ -1,55 +1,71 @@
 <template>
   <div class="min-h-screen py-12">
-    <main class="container mx-auto px-6 py-10 bg-white shadow-2xl rounded-xl">
-      <h1 class="text-4xl font-extrabold text-gray-800 text-center mb-10">About Us</h1>
+    <main class="container mx-auto px-6 py-10 shadow-2xl rounded-xl bg-transparent">
+      <!-- Page Header -->
+      <h1 class="text-5xl font-extrabold text-second-500 text-center mb-12">
+        About Us
+      </h1>
 
-      <section class="mb-8">
-        <p class="text-gray-700 text-lg leading-relaxed">
-          Welcome to <span class="font-semibold">CelForge</span>—a platform where 
-          creativity, strategy, and community converge. At CelForge, we empower players 
-          to craft their worlds, master innovative gameplay, and connect with like-minded 
-          creators and adventurers.
+      <!-- Welcome Section -->
+      <section class="mb-10">
+        <p class="text-second-600 text-lg leading-relaxed text-center max-w-4xl mx-auto">
+          Welcome to <span class="font-semibold text-second-500">CelForge</span>—a
+          platform where creativity, strategy, and community converge. At CelForge, we
+          empower players to craft their worlds, master innovative gameplay, and connect
+          with like-minded creators and adventurers.
         </p>
       </section>
 
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+      <!-- Forge Your Destiny -->
+      <section class="mb-10">
+        <h2 class="text-3xl font-semibold text-second-500 mb-6 text-center">
           Forge Your Destiny
         </h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          CelForge isn’t just about playing games—it’s about creating, innovating, and 
-          conquering challenges. Here, you’ll shape dynamic worlds, refine your strategies, 
+        <p class="text-second-600 text-lg leading-relaxed max-w-3xl mx-auto">
+          CelForge isn’t just about playing games—it’s about creating, innovating, and
+          conquering challenges. Here, you’ll shape dynamic worlds, refine your strategies,
           and build something extraordinary with the power of your imagination.
         </p>
       </section>
 
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Community at the Heart</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          <span class="font-semibold">At CelForge, community is everything.</span> We are 
-          a thriving hub for collaboration, innovation, and shared creativity. Whether 
-          you're building alliances, crafting unique experiences, or celebrating triumphs, 
-          you're part of a vibrant global network.
+      <!-- Community at the Heart -->
+      <section class="mb-10">
+        <h2 class="text-3xl font-semibold text-second-500 mb-6 text-center">
+          Community at the Heart
+        </h2>
+        <p class="text-second-600 text-lg leading-relaxed max-w-3xl mx-auto">
+          <span class="font-semibold text-second-500">At CelForge, community is
+          everything.</span> We are a thriving hub for collaboration, innovation, and
+          shared creativity. Whether you're building alliances, crafting unique
+          experiences, or celebrating triumphs, you're part of a vibrant global network.
         </p>
       </section>
 
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+      <!-- Create, Collaborate, Conquer -->
+      <section class="mb-10">
+        <h2 class="text-3xl font-semibold text-second-500 mb-6 text-center">
           Create, Collaborate, Conquer
         </h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          CelForge empowers you to turn ideas into reality and challenges into victories. 
-          Join forces with fellow players, forge unique paths, and leave your mark in a 
+        <p class="text-second-600 text-lg leading-relaxed max-w-3xl mx-auto">
+          CelForge empowers you to turn ideas into reality and challenges into victories.
+          Join forces with fellow players, forge unique paths, and leave your mark in a
           constantly evolving universe of infinite possibilities.
         </p>
       </section>
 
+      <!-- Contact Us -->
       <section>
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
-        <p class="text-gray-700 text-lg leading-relaxed">
-          Have questions, feedback, or ready to embark on your CelForge journey? Reach out 
+        <h2 class="text-3xl font-semibold text-second-500 mb-6 text-center">
+          Contact Us
+        </h2>
+        <p class="text-second-600 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+          Have questions, feedback, or ready to embark on your
+          <span class="font-semibold text-second-500">CelForge</span> journey? Reach out
           to us at
-          <a href="mailto:support@celforge.com" class="text-blue-600 hover:underline">
+          <a
+            href="mailto:support@celforge.com"
+            class="text-second-500 hover:underline font-bold"
+          >
             support@celforge.com
           </a>
           . We’re here to help and celebrate your success!
@@ -66,5 +82,11 @@ useGameAboutSeo();
 </script>
 
 <style scoped>
-/* Optional: Add additional custom styles if needed */
+/* Customize colors for the second theme */
+.text-second-500 {
+  color: #4d9fef; /* Replace with your second theme primary color */
+}
+.text-second-600 {
+  color: #3b82d8; /* Replace with your second theme secondary color */
+}
 </style>

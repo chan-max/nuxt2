@@ -1,48 +1,41 @@
 <template>
   <div
     v-if="game"
-    class="relative bg-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full"
+    class="relative bg-gray-200 shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
   >
-    <!-- Background Thumbnail -->
-
+    <!-- Full Background Image -->
     <img
       :src="game.thumb || '/default-thumbnail.jpg'"
       :alt="game.title || 'Game Thumbnail'"
       class="w-full h-full object-cover block absolute inset-0 z-0"
     />
 
-    <!-- Overlay Content -->
+    <!-- Content Overlay -->
     <div
-      class="relative z-10 bg-gradient-to-t from-black/50 to-transparent text-white p-4 flex flex-col flex-grow space-y-3 rounded-xl"
+      class="relative z-10 bg-gradient-to-b from-black/70 to-black/40 text-white p-6 flex flex-col flex-grow space-y-4"
     >
       <!-- Game Title -->
-      <NuxtLink :to="`/detail/${game.id}`">
-        <h2
-          class="text-lg font-bold hover:text-gray-300 transition cursor-pointer truncate"
-        >
+      <NuxtLink :to="`/detail/${game.id}`" class="block">
+        <h2 class="text-2xl font-extrabold hover:text-second-500 transition truncate">
           {{ game.title || "Untitled Game" }}
         </h2>
       </NuxtLink>
 
       <!-- Game Description -->
-      <p
-        class="text-sm text-gray-200 overflow-hidden"
-        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical"
-      >
+      <p class="text-base opacity-90 overflow-hidden line-clamp-3">
         {{ game.description || "No description available." }}
       </p>
 
       <!-- Tags -->
-      <div class="flex flex-wrap gap-2">
+      <div class="flex flex-wrap gap-3">
         <template v-for="tag in formatTags(game.tags)" :key="tag">
           <span
+
             @click="tagClick(tag)"
-            class="bg-white/20 text-white px-2 py-1 rounded-full text-xs cursor-pointer hover:bg-white/30 shadow-md hover:shadow-lg transition-all transform hover:scale-105"
+            class="bg-second-500 opacity-50 text-white px-3 py-1 rounded-full text-xs cursor-pointer hover:bg-second-600 shadow transition-all transform hover:scale-110"
             :title="getTagTitle(tag)"
           >
-            <NuxtLink to="/search">
-              {{ tag }}
-            </NuxtLink>
+            {{ tag }}
           </span>
         </template>
       </div>
@@ -52,7 +45,7 @@
     <a
       @click.stop="playnow(game)"
       target="_blank"
-      class="absolute cursor-pointer bottom-3 right-3 z-20 bg-second-500 text-white px-4 py-2 rounded-lg text-xs font-semibold shadow-md hover:bg-second-600 transition-transform transform hover:scale-105"
+      class="absolute cursor-pointer bottom-4 right-4 z-20 bg-second-500 text-white px-5 py-3 rounded-full text-sm font-bold shadow-lg hover:bg-second-600 transition-transform transform hover:scale-110"
     >
       Play Now
     </a>
@@ -61,7 +54,7 @@
   <!-- Placeholder if game is null -->
   <div
     v-else
-    class="bg-gray-100 rounded-xl shadow-md flex items-center justify-center p-6 h-full text-gray-500"
+    class="bg-gray-100 shadow-md flex items-center justify-center p-6 h-full text-gray-500"
   >
     <p>No game data available.</p>
   </div>
@@ -103,12 +96,12 @@ function getTagTitle(tag) {
 </script>
 
 <style scoped>
-/* Ensures proper z-index and positioning */
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
+/* For truncating and cleaner text flow */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>
