@@ -35,7 +35,7 @@ export default defineGameConfig({
     apiURL: 'https://api.ohioon.com',
     favicon: '/favicon.svg',
 
-    gtmID: 'GTM-WPZQPNBH',
+    gtmID: 'GTM-KN9NV5L2',
 
     "brandName": "InferGrid",
     "tagline": "Master the grid, dominate challenges, and unite through strategy",
