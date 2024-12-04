@@ -79,7 +79,6 @@
             @click="categoryClick(category as string)"
             class="group flex items-center px-4 py-3 hover:bg-gradient-to-r hover:from-custom-500 hover:to-custom-400 hover:text-white transition-all duration-300 cursor-pointer"
           >
-          <img src="/cloud.svg" class="w-8 h-8">
             <span
               class="text-base font-semibold text-gray-500 group-hover:text-white pl-3"
             >
@@ -145,7 +144,7 @@
             v-for="tag in visibleTags"
             :key="tag"
             @click="searchTag(tag)"
-            class="tag-item"
+            class="tag-item hover:scale-110 text-custom-300 cursor-pointer"
           >
             {{ tag }}
           </span>
@@ -354,28 +353,5 @@ function searchTag(tag: string) {
     border-right: none;
     margin-bottom: 1rem;
   }
-}
-
-.tag-item {
-  display: inline-block;
-  padding: 10px 16px; /* 标签的内边距 */
-  background-image: url("/cloud.svg"); /* 云朵背景 */
-  background-size: cover; /* 确保背景图填充标签 */
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #3d81e1; /* 白色文字，适合云朵背景 */
-  font-size: 0.875rem; /* 字体大小 */
-  font-weight: 600; /* 字体加粗 */
-  border-radius: 12px; /* 标签的圆角 */
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  max-width: 120px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.tag-item:hover {
-  transform: scale(1.1); /* 鼠标悬停放大效果 */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* 加深阴影 */
 }
 </style>

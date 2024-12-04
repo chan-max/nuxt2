@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="game"
-    class="relative bg-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full"
+    class="relative bg-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full n-border"
   >
     <!-- Background Thumbnail -->
 

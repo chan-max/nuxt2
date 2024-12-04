@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.cloud-border {
-    position: relative;
-    background: linear-gradient(to bottom, #87cefa 80%, #ffffff 100%);
-    /* 调整高度 */
-    width: 100%;
-    /* 全宽 */
+.n-border {
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
 }

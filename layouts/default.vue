@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white" style="background: linear-gradient(to bottom, #87cefa, #4682b4)">
+  <div class="bg-white" style="background: linear-gradient(to bottom, #000, #111)">
     <NuxtLoadingIndicator :color="loadingColor" />
     <!-- <BackToTop /> -->
     <Header />
