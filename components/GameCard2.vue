@@ -47,12 +47,13 @@
     <div
       class="absolute bottom-0 left-0 right-0 z-20 bg-custom-500 text-white text-center py-3"
     >
-      <button
-        @click.stop="playnow(game)"
-        class="px-6 py-2 text-sm font-bold rounded-md hover:bg-custom-400 transition-all transform hover:scale-105"
-      >
-        Play Now
-      </button>
+      <NuxtLink :to="`/detail/${game.id}`" class="block">
+        <button
+          class="px-6 py-2 text-sm font-bold rounded-md hover:bg-custom-400 transition-all transform hover:scale-105"
+        >
+          Detail
+        </button>
+      </NuxtLink>
     </div>
   </div>
 
@@ -108,5 +109,4 @@ function getTagTitle(tag) {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 </style>

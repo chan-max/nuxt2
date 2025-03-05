@@ -44,12 +44,13 @@
 
       <!-- Play Now Button -->
       <div class="mt-auto flex justify-center">
-        <button
-          @click.stop="playnow"
-          class="bg-custom-500 text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:bg-custom-400 transition-transform transform hover:scale-110"
-        >
-          Play Now
-        </button>
+        <NuxtLink :to="`/detail/${game.id}`" title="Click to view details">
+          <button
+            class="bg-custom-500 text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:bg-custom-400 transition-transform transform hover:scale-110"
+          >
+            Detail  >
+          </button>
+        </NuxtLink>
       </div>
     </div>
   </div>
