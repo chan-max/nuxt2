@@ -49,13 +49,14 @@
     </div>
 
     <!-- Play Now Button -->
+    <NuxtLink :to="`/detail/${game.id}`" class="block h-full">
     <a
-      @click.stop="playnow(game)"
       target="_blank"
       class="absolute cursor-pointer bottom-3 right-3 z-20 bg-second-500 text-white px-4 py-2 rounded-lg text-xs font-semibold shadow-md hover:bg-second-600 transition-transform transform hover:scale-105"
     >
-      Play Now
+      View Details
     </a>
+    </NuxtLink>
   </div>
 
   <!-- Placeholder if game is null -->
